@@ -5726,6 +5726,7 @@ input {
   margin: 24px auto;
 }
 #team .feature-icon img {
+ 
   height: 168px;
   width: 168px;
   -webkit-transition: all 0.3s ease;
@@ -5735,9 +5736,11 @@ input {
   transition: all 0.3s ease;
 }
 #team .feature-icon img:hover {
-	box-shadow:0 3px 3px #999;
-    margin-top:-10px;
-    margin-bottom:10px;
+
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	margin-top:-5px;
+	margin-bottom:5px;
 }
 /* ========== NEWSLETTER SECTION ========== */
 #newsletter {
