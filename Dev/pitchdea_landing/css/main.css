@@ -5735,11 +5735,9 @@ input {
   transition: all 0.2s ease;
 }
 #team .feature-icon img:hover {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+
+    margin-top:-10px;
+    margin-bottom:10px;
 }
 /* ========== NEWSLETTER SECTION ========== */
 #newsletter {
