@@ -5669,7 +5669,8 @@ input {
   padding: 0;
 }
 #header .navbar-collapse {
-  max-height: 500px;
+  /*max-height: 500px;*/
+ height:auto;
 }
 #header .navbar {
   margin-bottom: 0;
@@ -6199,5 +6200,6 @@ input {
   }
   #hero .intro {
     padding: 0;
+    margin-bottom:20px;
   }
 }
