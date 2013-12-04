@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B19B6635-8610-4F20-B8A2-2E8060836186}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LandingPage</RootNamespace>
+    <AssemblyName>LandingPage</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\twitter\jquery.tweet.js" />
+    <Content Include="assets\twitter\jquery.tweet.min.js" />
+    <Content Include="bootstrap\css\bootstrap-docs.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\prettify.css" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\js\application.js" />
+    <Content Include="bootstrap\js\google-code-prettify\prettify.js" />
+    <Content Include="bootstrap\js\holder.js" />
+    <Content Include="css\demo.css" />
+    <Content Include="css\flat-ui.css" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\main.css" />
+    <Content Include="fonts\Flat-UI-Icons.dev.svg" />
+    <Content Include="fonts\Flat-UI-Icons.svg" />
+    <Content Include="fonts\lato\lato-black-webfont.svg" />
+    <Content Include="fonts\lato\lato-bold-webfont.svg" />
+    <Content Include="fonts\lato\lato-bolditalic-webfont.svg" />
+    <Content Include="fonts\lato\lato-italic-webfont.svg" />
+    <Content Include="fonts\lato\lato-light-webfont.svg" />
+    <Content Include="fonts\lato\lato-regular-webfont.svg" />
+    <Content Include="images\barun.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\forbusiness.png" />
+    <Content Include="images\forpeople.png" />
+    <Content Include="images\icons\android.svg" />
+    <Content Include="images\icons\android1.svg" />
+    <Content Include="images\icons\app-store.svg" />
+    <Content Include="images\icons\arrow.svg" />
+    <Content Include="images\icons\art.svg" />
+    <Content Include="images\icons\bag.svg" />
+    <Content Include="images\icons\basket.svg" />
+    <Content Include="images\icons\book.svg" />
+    <Content Include="images\icons\bowling.svg" />
+    <Content Include="images\icons\box.svg" />
+    <Content Include="images\icons\brush.svg" />
+    <Content Include="images\icons\building.svg" />
+    <Content Include="images\icons\bulb.svg" />
+    <Content Include="images\icons\button.svg" />
+    <Content Include="images\icons\calculator.svg" />
+    <Content Include="images\icons\calendar.svg" />
+    <Content Include="images\icons\camera.svg" />
+    <Content Include="images\icons\car.svg" />
+    <Content Include="images\icons\card.svg" />
+    <Content Include="images\icons\chair.svg" />
+    <Content Include="images\icons\chat.svg" />
+    <Content Include="images\icons\clipboard.svg" />
+    <Content Include="images\icons\clocks.svg" />
+    <Content Include="images\icons\compas.svg" />
+    <Content Include="images\icons\converse.svg" />
+    <Content Include="images\icons\cup.svg" />
+    <Content Include="images\icons\dj.svg" />
+    <Content Include="images\icons\donut.svg" />
+    <Content Include="images\icons\dude.svg" />
+    <Content Include="images\icons\dynamite.svg" />
+    <Content Include="images\icons\earth.svg" />
+    <Content Include="images\icons\egg.svg" />
+    <Content Include="images\icons\eye.svg" />
+    <Content Include="images\icons\file.svg" />
+    <Content Include="images\icons\fit.svg" />
+    <Content Include="images\icons\flag.svg" />
+    <Content Include="images\icons\flask.svg" />
+    <Content Include="images\icons\flower.svg" />
+    <Content Include="images\icons\games.svg" />
+    <Content Include="images\icons\gift-box.svg" />
+    <Content Include="images\icons\girl.svg" />
+    <Content Include="images\icons\goal.svg" />
+    <Content Include="images\icons\google .svg" />
+    <Content Include="images\icons\graph.svg" />
+    <Content Include="images\icons\icecream.svg" />
+    <Content Include="images\icons\imac.svg" />
+    <Content Include="images\icons\ipad.svg" />
+    <Content Include="images\icons\iphone.svg" />
+    <Content Include="images\icons\key.svg" />
+    <Content Include="images\icons\lettersymbol.svg" />
+    <Content Include="images\icons\lock.svg" />
+    <Content Include="images\icons\loop.svg" />
+    <Content Include="images\icons\macbook.svg" />
+    <Content Include="images\icons\magic.svg" />
+    <Content Include="images\icons\magicmouse.svg" />
+    <Content Include="images\icons\mail.svg" />
+    <Content Include="images\icons\map.svg" />
+    <Content Include="images\icons\medal.svg" />
+    <Content Include="images\icons\mic.svg" />
+    <Content Include="images\icons\money.svg" />
+    <Content Include="images\icons\mortarboard.svg" />
+    <Content Include="images\icons\mountain.svg" />
+    <Content Include="images\icons\news.svg" />
+    <Content Include="images\icons\paper-bag.svg" />
+    <Content Include="images\icons\pc.svg" />
+    <Content Include="images\icons\pencil.svg" />
+    <Content Include="images\icons\pencils.svg" />
+    <Content Include="images\icons\picture.svg" />
+    <Content Include="images\icons\pig.svg" />
+    <Content Include="images\icons\pills.svg" />
+    <Content Include="images\icons\play.svg" />
+    <Content Include="images\icons\printer.svg" />
+    <Content Include="images\icons\responsive.svg" />
+    <Content Include="images\icons\retina.svg" />
+    <Content Include="images\icons\ring.svg" />
+    <Content Include="images\icons\rocket.svg" />
+    <Content Include="images\icons\rss.svg" />
+    <Content Include="images\icons\safe.svg" />
+    <Content Include="images\icons\save.svg" />
+    <Content Include="images\icons\search.svg" />
+    <Content Include="images\icons\settings.svg" />
+    <Content Include="images\icons\shield.svg" />
+    <Content Include="images\icons\shirt.svg" />
+    <Content Include="images\icons\skateboard.svg" />
+    <Content Include="images\icons\spray.svg" />
+    <Content Include="images\icons\storage.svg" />
+    <Content Include="images\icons\support.svg" />
+    <Content Include="images\icons\ticket.svg" />
+    <Content Include="images\icons\toilet-paper.svg" />
+    <Content Include="images\icons\touch.svg" />
+    <Content Include="images\icons\trash.svg" />
+    <Content Include="images\icons\trip-bag.svg" />
+    <Content Include="images\icons\trunk.svg" />
+    <Content Include="images\icons\ubmrella.svg" />
+    <Content Include="images\icons\user-interface.svg" />
+    <Content Include="images\icons\video.svg" />
+    <Content Include="images\icons\weather.svg" />
+    <Content Include="images\icons\wi-fi.svg" />
+    <Content Include="images\icons\wine.svg" />
+    <Content Include="images\icons\yinyang.svg" />
+    <Content Include="images\Kerkko.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\switch\mask-square.png" />
+    <Content Include="images\switch\mask.png" />
+    <Content Include="images\Tapio.png" />
+    <Content Include="images\Tero.png" />
+    <Content Include="js\bootstrap-select.js" />
+    <Content Include="js\bootstrap-switch.js" />
+    <Content Include="js\bootstrap-typeahead.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom-ck.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\flatui-checkbox.js" />
+    <Content Include="js\flatui-radio.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\icon-font-ie7.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\jquery-2.0.3.min.js" />
+    <Content Include="js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="js\jquery.fitvids.min.js" />
+    <Content Include="js\jquery.isotope.min.js" />
+    <Content Include="js\jquery.magnific-popup.js" />
+    <Content Include="js\jquery.placeholder.js" />
+    <Content Include="js\jquery.tagsinput.js" />
+    <Content Include="js\jquery.ui.touch-punch.min.js" />
+    <Content Include="landing_page.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.php" />
+    <Content Include="assets\contact.php" />
+    <Content Include="assets\functions.php" />
+    <Content Include="assets\newsletter.php" />
+    <Content Include="assets\twitter\index.php" />
+    <Content Include="assets\twitter\lib\tmhOAuth.php" />
+    <Content Include="assets\twitter\lib\tmhUtilities.php" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\Flat-UI-Icons.eot" />
+    <Content Include="fonts\Flat-UI-Icons.ttf" />
+    <Content Include="fonts\Flat-UI-Icons.woff" />
+    <Content Include="fonts\icomoon-session.json" />
+    <Content Include="fonts\lato\lato-black-webfont.eot" />
+    <Content Include="fonts\lato\lato-black-webfont.ttf" />
+    <Content Include="fonts\lato\lato-black-webfont.woff" />
+    <Content Include="fonts\lato\lato-bold-webfont.eot" />
+    <Content Include="fonts\lato\lato-bold-webfont.ttf" />
+    <Content Include="fonts\lato\lato-bold-webfont.woff" />
+    <Content Include="fonts\lato\lato-bolditalic-webfont.eot" />
+    <Content Include="fonts\lato\lato-bolditalic-webfont.ttf" />
+    <Content Include="fonts\lato\lato-bolditalic-webfont.woff" />
+    <Content Include="fonts\lato\lato-italic-webfont.eot" />
+    <Content Include="fonts\lato\lato-italic-webfont.ttf" />
+    <Content Include="fonts\lato\lato-italic-webfont.woff" />
+    <Content Include="fonts\lato\lato-light-webfont.eot" />
+    <Content Include="fonts\lato\lato-light-webfont.ttf" />
+    <Content Include="fonts\lato\lato-light-webfont.woff" />
+    <Content Include="fonts\lato\lato-regular-webfont.eot" />
+    <Content Include="fonts\lato\lato-regular-webfont.ttf" />
+    <Content Include="fonts\lato\lato-regular-webfont.woff" />
+    <Content Include="less\demo.less" />
+    <Content Include="less\flat-ui.less" />
+    <Content Include="less\fonts.less" />
+    <Content Include="less\icon-font.less" />
+    <Content Include="less\main.less" />
+    <Content Include="less\mixins.less" />
+    <Content Include="less\scaffolding.less" />
+    <Content Include="less\spaces.less" />
+    <Content Include="less\variables.less" />
+    <Content Include="less\modules\alerts.less" />
+    <Content Include="less\modules\badges.less" />
+    <Content Include="less\modules\bottom.less" />
+    <Content Include="less\modules\breadcrumbs.less" />
+    <Content Include="less\modules\button-groups.less" />
+    <Content Include="less\modules\buttons.less" />
+    <Content Include="less\modules\caret.less" />
+    <Content Include="less\modules\carousel.less" />
+    <Content Include="less\modules\checkbox-and-radio.less" />
+    <Content Include="less\modules\code.less" />
+    <Content Include="less\modules\dialog.less" />
+    <Content Include="less\modules\dropdown.less" />
+    <Content Include="less\modules\forms.less" />
+    <Content Include="less\modules\iconbar.less" />
+    <Content Include="less\modules\input-groups.less" />
+    <Content Include="less\modules\input-icons.less" />
+    <Content Include="less\modules\labels.less" />
+    <Content Include="less\modules\modals.less" />
+    <Content Include="less\modules\navbar.less" />
+    <Content Include="less\modules\navs.less" />
+    <Content Include="less\modules\pager.less" />
+    <Content Include="less\modules\pagination.less" />
+    <Content Include="less\modules\popover.less" />
+    <Content Include="less\modules\progress-bars.less" />
+    <Content Include="less\modules\select.less" />
+    <Content Include="less\modules\switch.less" />
+    <Content Include="less\modules\tables.less" />
+    <Content Include="less\modules\tagsinput.less" />
+    <Content Include="less\modules\tooltip.less" />
+    <Content Include="less\modules\type.less" />
+    <Content Include="less\modules\ui-datepicker.less" />
+    <Content Include="less\modules\ui-slider.less" />
+    <Content Include="less\modules\ui-spinner.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1546/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
