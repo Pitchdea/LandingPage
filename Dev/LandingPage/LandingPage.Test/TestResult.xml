@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\Pitchdea\LandingPage\Dev\LandingPage\LandingPage.Test\LandingPage.Test.nunit" total="1" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-12-10" time="17:11:03">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.7905" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="HEIMDALL" user="Tapio" user-domain="HEIMDALL" />
+  <culture-info current-culture="fi-FI" current-uiculture="en-US" />
+  <test-suite type="Project" name="D:\Pitchdea\LandingPage\Dev\LandingPage\LandingPage.Test\LandingPage.Test.nunit" executed="True" result="Failure" success="False" time="0.862" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="D:\Pitchdea\LandingPage\Dev\LandingPage\LandingPage.Test\bin\Debug\LandingPage.Test.dll" executed="True" result="Failure" success="False" time="0.846" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="LandingPage" executed="True" result="Failure" success="False" time="0.846" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="0.846" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="SqlToolTest" executed="True" result="Failure" success="False" time="0.844" asserts="0">
+                    <results>
+                      <test-case name="LandingPage.Test.SqlToolTest._01_ShouldAddNewEmail" executed="True" result="Failure" success="False" time="0.831" asserts="2">
+                        <failure>
+                          <message><![CDATA[  Email not found in database.
+  Expected: not null
+  But was:  null
+]]></message>
+                          <stack-trace><![CDATA[at LandingPage.Test.SqlToolTest._01_ShouldAddNewEmail() in d:\Pitchdea\LandingPage\Dev\LandingPage\LandingPage.Test\SqlToolTest.cs:line 43
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
