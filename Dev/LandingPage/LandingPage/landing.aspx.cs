@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Text.RegularExpressions;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using MySql.Data.MySqlClient;
 
 namespace LandingPage
 {
@@ -31,6 +26,9 @@ namespace LandingPage
 
     public static class EmailValidator
     {
+        //TODO: SQL injection
+        //TODO: Other threats?
+
         public static bool Validate(string email)
         {
             if (email.Length > 150)
