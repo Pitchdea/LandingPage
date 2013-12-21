@@ -83,6 +83,8 @@
     <Content Include="images\favicon.ico" />
     <Content Include="images\forbusiness.png" />
     <Content Include="images\forpeople.png" />
+    <Content Include="images\forpeople_image.png" />
+    <Content Include="images\forpeople_list.png" />
     <Content Include="images\icons\android.svg" />
     <Content Include="images\icons\android1.svg" />
     <Content Include="images\icons\app-store.svg" />
@@ -185,6 +187,7 @@
     <Content Include="images\icons\yinyang.svg" />
     <Content Include="images\Kerkko.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\presentation_idea.jpg" />
     <Content Include="images\switch\mask-square.png" />
     <Content Include="images\switch\mask.png" />
     <Content Include="images\Tapio.png" />
