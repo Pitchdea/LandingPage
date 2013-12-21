@@ -95,6 +95,7 @@
                     <p class="lead">We have an idea</p>
                     <p>About ideas that can change the world.</p>
                     <p>Pitchdea is a Finnish startup that aims to bring the ideas of the world together in a way never seen before. We are about crowdsourcing, creative thinking, and most of all, about ideas that can change the world.</p>
+                    <p>We are eagerly pursuing our goal of creating a platform where people and ideas would collide and create something brilliant. To do this we need you, so subscribe and follow the progress of Pitchdea. You have the possibility to get a sneak peak on the upcoming website and be part of a passionate community.</p>
                     <a href="#newsletter" class="btn btn-hg btn-primary">Subscribe for news about pitchdea</a>                    
                 </div>
                 <div class="col-sm-4 intro social">
@@ -131,7 +132,11 @@
 
                         <p> Pitchdea offers a new way of sharing and discovering ideas and projects.</p>
 
-                        <p> We offer an interest based social media platform for creating and evolving ideas. We allow the user to share and discover ideas they are passionate about and then make them better.</p>
+                        <p> Ever had an idea you would have wished came real?</p>
+                        <p> Find the people and evolve the idea through discussion. The end product can be anything imaginable, a comic, a tattooed leather jacket or a way for your local cafeteria to improve their service. Pitchdea aims to provide you with a way of finding out if people want the idea to come alive through our liking mechanism. But don't stop there, find similar ideas and connect with people with the means to make your idea reality. </p>
+                        <p> Already read the news, blogs and seen enough cat pictures for the day?</p>
+                        <p> We might just have the cure for you. Our team wants to find you interesting ideas to read while making browsing through them fun. Who knows, maybe you will find an idea you are so passionate about you will start spending your time further developing it.
+                            In a nutshell we offer an interest based social media platform for creating and evolving ideas. We allow the user to share and discover ideas they are passionate about and then make them better. Join us and find the most interesting ideas and maybe some new friends! </p>
                     </div> 
 
                 </div><!-- /row -->
@@ -146,13 +151,15 @@
             <div class="container">
                 <div class="row">                   
 
-                    <div class="col-md-6 pull-right">
+                     <div class="col-md-6 pull-right">
                         <h3>Pitchdea is for Businesses!</h3>
 
-                        <p> Pitchdea offers many opportunities for businesses.</p>
-
-                        <p> Through us businesses can have a stable marketing channel, demographic data, and a way to launch and validate new product lines.</p>
-                    </div>
+                        <p>Pitchdea offers many opportunities for businesses starting but not limited to interacting with potential customers. Below we will let you know how to do just that.</p>
+                        <p>New collection of shoes coming up? Wanting to test a new recipe for your cinnamon rolls but afraid it might now be taken in so well? Interested in finding new customer segments?</p>
+                        <p>Through us your business can establish a solid marketing channel, access interesting demographic data, and a way to launch and validate new product lines. Best of all, this can be done with low cost from fresh data. Just for you.</p>
+                        <p>What we really have here, is a way for your business to find out for example that 120 local people between the ages of 55-65 would be interested in your product. A customer segment you might not have realized existed. </p>  
+                        <p>Or that 20 000 people would want to try out your intended new line of batman underwear if you would manufacture them. How it works with us is that your company can propose and idea or the customers can propose one for you themselves. Contact us and we will tell you more.</p>
+                     </div>
 
                     <div class="col-md-6 pull-left gallery-popup">
                         <a href="http://www.placehold.it/640x480"><img src="images/forbusiness.png" alt="placeholder image" class="img-responsive"></a>
@@ -186,7 +193,8 @@
                         <a href="http://fi.linkedin.com/in/barunbashyal" target="_blank"><img src="images/barun.png" alt="barun" class="img-circle"></a>
                     </div>
                     <h4>Barun Bashyal</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Front-End Developer</p>
+                    <p>Barun is the optimist and the leader in our team. His attitude in life will shine as a bright beacon for many and his cookings will keep us satisfied.  </p>
                 </div>
 
                 <!-- Feature Item 2 -->
@@ -195,25 +203,28 @@
                         <a href="http://www.linkedin.com/pub/kerkko-heiskanen/48/bb0/765" target="_blank"><img src="images/Kerkko.png" alt="kerkko" class="img-circle"></a>
                     </div>
                     <h4>Kerkko Heiskanen</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                     <p>Front-End Developer</p>
+                    <p>Kerkko is the crazy one. We live by his wild ideas and the passion in his eyes. Besides that Kerkko acts as the ultimate web guru our whole team relies on. </p>
                 </div>
 
                 <!-- Feature Item 3 -->
                 <div class="col-md-3 text-center">
                     <div class="feature-icon">
-                        <a href="http://www.linkedin.com/pub/tero-urponen/54/481/ab7" target="_blank"><img src="images/Tero.png" alt="barun" class="img-circle"></a>
+                        <a href="http://www.linkedin.com/pub/tero-urponen/54/481/ab7" target="_blank"><img src="images/Tero.png" alt="tero" class="img-circle"></a>
                     </div>
                     <h4>Tero Urponen</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                     <p>Lead Back-End Developer</p>
+                    <p>Tero is the superman whose shoulders we are building this project on. With his knowledge in agile development and mentality of never giving up we can do anything. </p>
                 </div>
 
                 <!-- Feature Item 3 -->
                 <div class="col-md-3 text-center">
                     <div class="feature-icon">
-                        <a href="http://www.linkedin.com/in/tapiolouhi" target="_blank"><img src="images/Tapio.png" alt="barun" class="img-circle"></a>
+                        <a href="http://www.linkedin.com/in/tapiolouhi" target="_blank"><img src="images/Tapio.png" alt="tapio" class="img-circle"></a>
                     </div>
                     <h4>Tapio Louhi</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>Back-End Developer</p>
+                    <p>In Tapio’s hands the pieces of our puzzle have started to find their places. With his perspective and keen eye on information security we see the road ahead of us clearly.</p>
                 </div>
 
             </div><!-- /row -->
@@ -231,7 +242,7 @@
 
             <header>
                 <h1>Contact us</h1>
-                <p class="lead">You have a question? Someone else might have had the exact same one. Let's find out!</p>
+                <p class="lead">Do you have a question? Someone else might have had the exact same one. Let's find out!</p>
             </header>
 
             <div class="row">
@@ -276,7 +287,7 @@
                 <div class="row">
                         
                   <div class="col-md-4 col-xs-6 text-left">
-                    <strong>Google Hangout</strong>
+                    <strong>Google+</strong>
                   </div>
                      
                   <div class="col-md-8 col-xs-6">
