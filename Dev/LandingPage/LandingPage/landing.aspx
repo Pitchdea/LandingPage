@@ -360,9 +360,9 @@
                     <form runat="server" id="newsletter_signup">
                         <div class="input-group">
                      <%--     <input type="text" name="e-mail" id="e-mail" class="form-control input-hg">--%>
-                          <asp:textbox runat="server" ID="subsc_email" class="form-control input-hg"/>
+                          <asp:textbox runat="server" ID="subsc_email" CssClass="form-control input-hg" />
                           <span class="input-group-btn">
-                            <asp:button runat="server" OnClick="subsc_button_Click" Text="Sign Up" class="btn btn-inverse btn-hg" ID="subsc_button"/>
+                            <asp:button runat="server" OnClick="subsc_button_Click" Text="Sign Up" ID="subsc_button" CssClass="btn btn-inverse btn-hg" />
                           </span>
                         </div><!-- /input-group -->
                     </form>
