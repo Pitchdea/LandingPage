@@ -92,8 +92,8 @@
                 <div class="col-sm-8 intro">
                     <h2 style="color:#c0392b">PITCHDEA</h2>
                     <h3><small style="color:gray;">- where ideas evolve!</small></h3>
-                    <p class="lead">We have an idea</p>
-                    <p>About ideas that can change the world.</p>
+                    <p class="lead">We have an idea...</p>
+                    <p style="font-size:130%;">...about ideas that can change the world.</p>
                     <p>Pitchdea is a Finnish startup that aims to bring the ideas of the world together in a way never seen before. We are about crowdsourcing, creative thinking, and most of all, about ideas that can change the world.</p>
                     <p>We are eagerly pursuing our goal of creating a platform where people and ideas would collide and create something brilliant. To do this we need you, so subscribe and follow the progress of Pitchdea. You have the possibility to get a sneak peak on the upcoming website and be part of a passionate community.</p>
                     <a href="#newsletter" class="btn btn-hg btn-primary">Subscribe for news about pitchdea</a>                    
@@ -133,11 +133,11 @@
 
                         <p> Pitchdea offers a new way of sharing and discovering ideas and projects.</p>
 
-                        <p> Ever had an idea you would have wished came real?</p>
-                        <p> Find the people and evolve the idea through discussion. The end product can be anything imaginable, a comic, a tattooed leather jacket or a way for your local cafeteria to improve their service. Pitchdea aims to provide you with a way of finding out if people want the idea to come alive through our liking mechanism. But don't stop there, find similar ideas and connect with people with the means to make your idea reality. </p>
-                        <p> Already read the news, blogs and seen enough cat pictures for the day?</p>
-                        <p> We might just have the cure for you. Our team wants to find you interesting ideas to read while making browsing through them fun. Who knows, maybe you will find an idea you are so passionate about you will start spending your time further developing it.
-                            In a nutshell we offer an interest based social media platform for creating and evolving ideas. We allow the user to share and discover ideas they are passionate about and then make them better. Join us and find the most interesting ideas and maybe some new friends! </p>
+                        <p> Have you ever had an idea that you wished could become reality?</p>
+
+                        <p> Find the right people and evolve your idea through discussions. The end product can be anything imagineable: a comic, a tattooed leather jacket or a way for your local cafeteria to improve their service. Pitchdea aims to provide you with a way of finding out if people want the idea to come alive. But don't stop there - find similar ideas and connect with people with the means to make your idea reality. </p>
+                        <p> Already read the news and blogs or seen enough cat pictures for the day?</p>
+                        <p> We might just have the cure for you. Our team wants to bring you interesting ideas and make browsing through them fun. In a nutshell we offer an interest based social media platform for creating and evolving ideas. We allow the user to share and discover ideas they are passionate about and then improve them. Join us and find the most interesting ideas and maybe even some new friends! </p>
                     </div> 
 
                 </div><!-- /row -->
@@ -155,11 +155,9 @@
                      <div class="col-md-6 pull-right">
                         <h3>Pitchdea is for Businesses!</h3>
 
-                        <p>Pitchdea offers many opportunities for businesses starting but not limited to interacting with potential customers. Below we will let you know how to do just that.</p>
-                        <p>New collection of shoes coming up? Wanting to test a new recipe for your cinnamon rolls but afraid it might now be taken in so well? Interested in finding new customer segments?</p>
-                        <p>Through us your business can establish a solid marketing channel, access interesting demographic data, and a way to launch and validate new product lines. Best of all, this can be done with low cost from fresh data. Just for you.</p>
-                        <p>What we really have here, is a way for your business to find out for example that 120 local people between the ages of 55-65 would be interested in your product. A customer segment you might not have realized existed. </p>  
-                        <p>Or that 20 000 people would want to try out your intended new line of batman underwear if you would manufacture them. How it works with us is that your company can propose and idea or the customers can propose one for you themselves. Contact us and we will tell you more.</p>
+                        <p>Pitchdea offers many opportunities for businesses, including a powerful way to interact with customers.</p>
+                        <p>New collection of shoes coming up? Want to test a new recipe for your cinnamon rolls but are afraid of the customer reactions? Interested in finding new customer segments?</p>
+                        <p>Through us your business can establish a solid marketing channel, access interesting demographic data, and have a way to launch and validate new product lines. Best of all, this can be done with a low cost, with the latest customer data. Tailored for you.</p>
                      </div>
 
                     <div class="col-md-6 pull-left gallery-popup">
@@ -194,7 +192,7 @@
                         <a href="http://fi.linkedin.com/in/barunbashyal" target="_blank"><img src="images/barun.png" alt="barun" class="img-circle"></a>
                     </div>
                     <h4>Barun Bashyal</h4>
-                    <p>Front-End Developer</p>
+                    <p>Project lead</p>
                     <p>Barun is the optimist and the leader in our team. His attitude in life will shine as a bright beacon for many and his cookings will keep us satisfied.  </p>
                 </div>
 
