@@ -1,12 +1,14 @@
-<h2 style="color:#c0392b">PITCHDEA</h2>
-<h3><small style="color:gray;">- where ideas evolve!</small></h3>
+
+<font face="lato,verdana">
+<h1 style="color:#c0392b">PITCHDEA<br>
+<small style="color:gray;">- where ideas evolve!</small></h1>
 <p><b>Thank you for subscribing!</b></p>
 <p>We are pleased to have you on board. You will be updated on the latest news.<br>
-You can also follow Pitchdea on Facebook. Be sure to check our Blog. <br>
-Contact us directly via info@pitchdea.com</p>
+You can also follow Pitchdea on Facebook, Twitter, Google+ and LinkedIn. Be sure to check out our Blog. 
+Contact us directly via <u>info@pitchdea.com.</u></p>
 
 <p><b>Best Regards,</b><br>
 Pitchdea Team</p>
 
-
-<p><small>If you do not wish to have this newsletter anymore, you can <a href="http://www.pitchdea.com/unsubscribe">unsubscribe here</a>.</small></p>
+<p style="font-size:70%;">If you do not wish to have this newsletter anymore, you can <a href="http://www.pitchdea.com/unsubscribe">unsubscribe here</a>.</p>
+</font>
