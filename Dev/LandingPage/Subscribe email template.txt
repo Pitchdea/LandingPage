@@ -5,7 +5,7 @@
 <p><b>Thank you for subscribing!</b></p>
 <p>We are pleased to have you on board. You will be updated on the latest news.<br>
 You can also follow Pitchdea on Facebook, Twitter, Google+ and LinkedIn. Be sure to check out our Blog. 
-Contact us directly via <u>info@pitchdea.com</u></p>
+Contact us directly via <u>info@pitchdea.com.</u></p>
 
 <p><b>Best Regards,</b><br>
 Pitchdea Team</p>
