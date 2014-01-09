@@ -13,13 +13,40 @@ namespace LandingPage {
     public partial class Landing {
         
         /// <summary>
-        /// newsletter_signup control.
+        /// main_form control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm newsletter_signup;
+        protected global::System.Web.UI.HtmlControls.HtmlForm main_form;
+        
+        /// <summary>
+        /// contact_form_name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox contact_form_name;
+        
+        /// <summary>
+        /// contact_form_email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox contact_form_email;
+        
+        /// <summary>
+        /// contact_form_message control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox contact_form_message;
         
         /// <summary>
         /// subsc_email control.

@@ -1,4 +1,6 @@
-﻿using MySql.Data.MySqlClient;
+﻿using System.Data;
+using System.Web.UI.WebControls;
+using MySql.Data.MySqlClient;
 using System;
 using System.Text.RegularExpressions;
 using System.Web.UI;
@@ -21,6 +23,15 @@ namespace LandingPage
 
             //TODO: redirect and inform user of the result
             var added = _tool.SaveIfNotExists(subsc_email.Text.ToLower());
+        }
+
+        protected void contact_form_button_click(object sender, EventArgs e)
+        {
+            if(!EmailValidator.Validate(contact_form_email.Text))
+                return; //TODO: Front-end message to user.
+
+            //TODO: redirect and inform user of the result
+            var saved = _tool.SaveContactRequest(contact_form_name.Text, contact_form_email.Text, contact_form_message.Text);
         }
     }
 
@@ -79,6 +90,24 @@ namespace LandingPage
             var found = command.ExecuteScalar();
             _connection.Close();
             return found != null;
+        }
+
+        /// <summary>
+        /// Saves a contact request to the database.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="email"></param>
+        /// <param name="msg"></param>
+        /// <returns></returns>
+        public bool SaveContactRequest(string name, string email, string msg)
+        {
+            throw new NotImplementedException();
+
+            //TODO: check for illegal characters, protection against SQL injection.
+            _connection.Open();
+
+            _connection.Close();
+            return true;
         }
     }
 }

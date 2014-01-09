@@ -21,6 +21,8 @@
     
     <!-- Scrollspy set in the body -->
     <body id="home" data-spy="scroll" data-target=".main-nav" data-offset="73">
+    
+    <form runat="server" id="main_form">
 
     <!--///////////////////////////////////////// PARALLAX BACKGROUND ////////////////////////////////////////-->
 
@@ -263,7 +265,7 @@
                           
                   <div class="col-md-8 col-xs-6">
                     <address>
-                      pitchdea(at)gmail.com<br>
+                      info(at)pitchdea.com<br>
                     </address>
                   </div>
 
@@ -322,13 +324,14 @@
                     </div>
 
                     <!--////////// CONTACT FORM //////////-->
-                    <form id="contact-form">
-                        <input type="text" id="name" name="name" class="form-control input-hg" placeholder="Your name..." />
-                        <input type="text" id="email" name="email" class="form-control input-hg" placeholder="Your e-mail address..." />
-                        <textarea class="form-control input-hg" rows="4" id="message" name="message" placeholder="Your message..."></textarea>
+                        <%--<input type="text" id="name" name="name" class="form-control input-hg" placeholder="Your name..." />--%>
+                        <asp:TextBox ID="contact_form_name" CssClass="form-control input-hg" placeholder="Your name..." runat="server"/>
+                        <%--<input type="text" id="email" name="email" class="form-control input-hg" placeholder="Your e-mail address..." />--%>
+                        <asp:TextBox ID="contact_form_email" CssClass="form-control input-hg" placeholder="Your e-mail address..."  runat="server"/>
+                        <%--<textarea class="form-control input-hg" rows="4" id="message" name="message" placeholder="Your message..."></textarea>--%>
+                        <asp:TextBox ID="contact_form_message" CssClass="form-control input-hg" TextMode="MultiLine" rows="4" placeholder="Your message..." runat="server"/>
                         <button type="submit" class="btn btn-inverse btn-hg btn-block" name="submit">Send</button>
-                    </form>
-
+                        <asp:Button runat="server" OnClick="contact_form_button_click" Text="Send" CssClass="btn btn-inverse btn-hg btn-block"/> <%--TODO: style doesn't work for asp:Button!--%> 
                      <div id="contact-error"></div>
                     <!--////////// end CONTACT FORM ///////////-->
 
@@ -355,7 +358,6 @@
                 <div class="col-md-6">
 
                     <!--////////// Newsletter Form //////////-->
-                    <form runat="server" id="newsletter_signup">
                         <div class="input-group">
                      <%--     <input type="text" name="e-mail" id="e-mail" class="form-control input-hg">--%>
                           <asp:textbox runat="server" ID="subsc_email" CssClass="form-control input-hg" />
@@ -363,7 +365,6 @@
                             <asp:button runat="server" OnClick="subsc_button_Click" Text="Sign Up" ID="subsc_button" CssClass="btn btn-inverse btn-hg" />
                           </span>
                         </div><!-- /input-group -->
-                    </form>
                     <!--////////// end of Newsletter Form ///////////-->
 
                      <div id="error-info"></div><!-- Error notification for newsletter signup form -->
@@ -448,6 +449,6 @@
     <script src="js/custom.js"></script>
 
     <!--//////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
-
+  </form>
   </body>
 </html>
