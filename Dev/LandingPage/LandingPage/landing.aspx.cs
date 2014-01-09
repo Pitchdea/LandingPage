@@ -30,6 +30,12 @@ namespace LandingPage
             if(!EmailValidator.Validate(contact_form_email.Text))
                 return; //TODO: Front-end message to user.
 
+            if(string.IsNullOrEmpty(contact_form_name.Text))
+                return; //TODO: Front-end message to user.
+
+            if(string.IsNullOrEmpty(contact_form_message.Text))
+                return; //TODO: Front-end message to user.
+
             //TODO: redirect and inform user of the result
             var saved = _tool.SaveContactRequest(contact_form_name.Text, contact_form_email.Text, contact_form_message.Text);
         }
@@ -53,7 +59,7 @@ namespace LandingPage
     public class SqlTool
     {
         private readonly MySqlConnection _connection;
-        private const string ConnectionString = @"Server=localhost; Database=pitchdealanding;Uid=root;Pwd=S@Uvdnk9u97Z>3@Q";
+        private const string ConnectionString = @"Server=localhost; Database=pitchdealanding;Uid=pitchdealanding;Pwd=fAcuc8up";
 
         public SqlTool()
         {
@@ -101,11 +107,11 @@ namespace LandingPage
         /// <returns></returns>
         public bool SaveContactRequest(string name, string email, string msg)
         {
-            throw new NotImplementedException();
-
             //TODO: check for illegal characters, protection against SQL injection.
             _connection.Open();
-
+            var query = string.Format("INSERT INTO contactform (name, email, message) VALUES ('{0}','{1}','{2}');", name, email, msg);
+            var command = new MySqlCommand(query, _connection);
+            command.ExecuteNonQuery();
             _connection.Close();
             return true;
         }

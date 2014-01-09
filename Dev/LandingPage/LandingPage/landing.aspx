@@ -331,7 +331,7 @@
                         <%--<textarea class="form-control input-hg" rows="4" id="message" name="message" placeholder="Your message..."></textarea>--%>
                         <asp:TextBox ID="contact_form_message" CssClass="form-control input-hg" TextMode="MultiLine" rows="4" placeholder="Your message..." runat="server"/>
                         <button type="submit" class="btn btn-inverse btn-hg btn-block" name="submit">Send</button>
-                        <asp:Button runat="server" OnClick="contact_form_button_click" Text="Send" CssClass="btn btn-inverse btn-hg btn-block"/> <%--TODO: style doesn't work for asp:Button!--%> 
+                        <asp:Button runat="server" OnClick="contact_form_button_click" Text="Send" CssClass="btn btn-inverse btn-hg btn-block" /> <%--TODO: style doesn't work for asp:Button!--%> 
                      <div id="contact-error"></div>
                     <!--////////// end CONTACT FORM ///////////-->
 
