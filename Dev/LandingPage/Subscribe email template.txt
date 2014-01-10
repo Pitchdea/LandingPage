@@ -6,7 +6,7 @@ h1 {color:#c0392b; font-size:250%; display:inline}
 h2 {color:gray; padding:0px; display:inline}
 h3 {color:#c0392b; padding:0px; margin:0px;}
 p {margin: 0px; padding-top:20px}
-div {color:gray; font-size:60%; padding-top:20px;}
+.smalltext {color:gray; font-size:60%; padding-top:20px;}
 .content {font-size:90%;}
 </style>
 </head>
@@ -24,7 +24,7 @@ You can also follow Pitchdea on Facebook, Twitter, Google+ and LinkedIn.
 <p><b>Best Regards,</b><br>
 <h3><small>Pitchdea Team</small></h3></p>
 
-<div id=smalltext>If you do not wish to receive this newsletter anymore, you can <a href="http://www.pitchdea.com/unsubscribe">unsubscribe here</a>.</div>
+<p class="smalltext">If you do not wish to receive this newsletter anymore, you can <a href="http://www.pitchdea.com/unsubscribe">unsubscribe here</a>.</div>
 </font>
 
 
