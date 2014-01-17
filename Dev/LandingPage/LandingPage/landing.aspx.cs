@@ -20,24 +20,30 @@ namespace LandingPage
         {
             if (!EmailValidator.Validate(subsc_email.Text))
             {
-                return; //TODO: Front-end message to user.
+                Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
+                return; //TODO: STYLED Front-end message to user.
             }
-            //TODO: redirect and inform user of the result
+            Response.Write("<script type='text/javascript'>alert('Thank you for subscribing to Pitchdea!.');</script>");
+
             var added = _tool.SaveIfNotExists(subsc_email.Text.ToLower());
         }
 
         protected void contact_form_button_click(object sender, EventArgs e)
         {
             if(!EmailValidator.Validate(contact_form_email.Text))
-                return; //TODO: Front-end message to user.
+                Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
+                return; 
 
             if(string.IsNullOrEmpty(contact_form_name.Text))
-                return; //TODO: Front-end message to user.
+                Response.Write("<script type='text/javascript'>alert('You need to input something into the name field.');</script>");
+                return; 
 
             if(string.IsNullOrEmpty(contact_form_message.Text))
-                return; //TODO: Front-end message to user.
+                Response.Write("<script type='text/javascript'>alert('You need to input a message.');</script>");
+                return; 
 
-            //TODO: redirect and inform user of the result
+ 
+                Response.Write("<script type='text/javascript'>alert('Thank you or your message!');</script>");
             var saved = _tool.SaveContactRequest(contact_form_name.Text, contact_form_email.Text, contact_form_message.Text);
         }
     }
