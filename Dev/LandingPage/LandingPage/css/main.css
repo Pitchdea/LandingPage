@@ -5696,7 +5696,7 @@ input {
 #hero {
   padding: 0;
   background: transparent;
-  height: 600px;
+  /*height: 600px;*/
 }
 #hero .intro {
   padding-top: 144px;
