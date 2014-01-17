@@ -127,7 +127,6 @@
 
                     <div class="col-md-6 pull-right gallery-popup">
                         <img src="images/forpeople_image.png" alt="placeholder image" class="img-responsive">
-                        <img src="images/forpeople_list.png" alt="placeholder image" class="img-responsive">
                     </div> 
 
                     <div class="col-md-6 pull-left">
