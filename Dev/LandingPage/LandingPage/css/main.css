@@ -5696,7 +5696,7 @@ input {
 #hero {
   padding: 0;
   background: transparent;
-  height: 600px;
+  /*height: 600px;*/
 }
 #hero .intro {
   padding-top: 144px;
@@ -6044,6 +6044,7 @@ input {
   padding-top: 24px;
   color: #2c3e50;
 }
+
 #faq input,
 #faq textarea {
   border: none;
@@ -6106,6 +6107,15 @@ input {
 .inline {
   margin-left: 12px;
 }
+
+#contact_form_submit_button {
+    background-color:#34495e!important;
+}
+
+#contact_form_submit_button:hover {
+    background-color:#394f6e!important;
+}
+
 /* ========== MEDIA QUERIES ========== */
 @media (max-width: 991px) {
   body {

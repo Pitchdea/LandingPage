@@ -127,7 +127,6 @@
 
                     <div class="col-md-6 pull-right gallery-popup">
                         <img src="images/forpeople_image.png" alt="placeholder image" class="img-responsive">
-                        <img src="images/forpeople_list.png" alt="placeholder image" class="img-responsive">
                     </div> 
 
                     <div class="col-md-6 pull-left">
@@ -324,14 +323,15 @@
                     </div>
 
                     <!--////////// CONTACT FORM //////////-->
-                        <%--<input type="text" id="name" name="name" class="form-control input-hg" placeholder="Your name..." />--%>
+
                         <asp:TextBox ID="contact_form_name" CssClass="form-control input-hg" placeholder="Your name..." runat="server"/>
-                        <%--<input type="text" id="email" name="email" class="form-control input-hg" placeholder="Your e-mail address..." />--%>
+
                         <asp:TextBox ID="contact_form_email" CssClass="form-control input-hg" placeholder="Your e-mail address..."  runat="server"/>
-                        <%--<textarea class="form-control input-hg" rows="4" id="message" name="message" placeholder="Your message..."></textarea>--%>
+
                         <asp:TextBox ID="contact_form_message" CssClass="form-control input-hg" TextMode="MultiLine" rows="4" placeholder="Your message..." runat="server"/>
-                        <button type="submit" class="btn btn-inverse btn-hg btn-block" name="submit">Send</button>
-                        <asp:Button runat="server" OnClick="contact_form_button_click" Text="Send" CssClass="btn btn-inverse btn-hg btn-block" /> <%--TODO: style doesn't work for asp:Button!--%> 
+
+                        <asp:Button runat="server" OnClick="contact_form_button_click" Text="Send" CssClass="btn btn-inverse btn-hg btn-block" ID="contact_form_submit_button"/> <%--TODO: style doesn't work for asp:Button!--%> 
+
                      <div id="contact-error"></div>
                     <!--////////// end CONTACT FORM ///////////-->
 

@@ -18,9 +18,10 @@ namespace LandingPage
 
         protected void subsc_button_Click(object sender, EventArgs e)
         {
-            if(!EmailValidator.Validate(subsc_email.Text))
+            if (!EmailValidator.Validate(subsc_email.Text))
+            {
                 return; //TODO: Front-end message to user.
-
+            }
             //TODO: redirect and inform user of the result
             var added = _tool.SaveIfNotExists(subsc_email.Text.ToLower());
         }

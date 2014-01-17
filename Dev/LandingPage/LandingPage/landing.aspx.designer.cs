@@ -49,6 +49,15 @@ namespace LandingPage {
         protected global::System.Web.UI.WebControls.TextBox contact_form_message;
         
         /// <summary>
+        /// contact_form_submit_button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button contact_form_submit_button;
+        
+        /// <summary>
         /// subsc_email control.
         /// </summary>
         /// <remarks>
