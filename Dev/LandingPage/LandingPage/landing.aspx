@@ -243,7 +243,7 @@
 
             <header>
                 <h1>Contact us</h1>
-                <p class="lead">Do you have a question? We might have the answers you are looking for!</p>
+                <p class="lead">Do you have a question? We might have the answers you need!</p>
             </header>
 
             <div class="row">
