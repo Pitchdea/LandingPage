@@ -86,5 +86,18 @@ namespace LandingPage
             _connection.Close();
             return found == null ? null : found.ToString();
         }
+        
+        public bool RemoveSubscription(string email)
+        {
+            _connection.Open();
+            var command = new MySqlCommand(string.Format(@"delete from subsc_emails where address = '{0}';", email), _connection);
+            var affected = command.ExecuteNonQuery();
+            _connection.Close();
+
+            if (affected > 1)
+                throw new Exception("Deleted the same email twice.");
+
+            return affected == 1;
+        }
     }
 }

@@ -13,13 +13,13 @@ namespace LandingPage {
     public partial class Unsubscribe {
         
         /// <summary>
-        /// form1 control.
+        /// UnsubscribeForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm UnsubscribeForm;
         
         /// <summary>
         /// Email control.
@@ -29,5 +29,23 @@ namespace LandingPage {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Email;
+        
+        /// <summary>
+        /// Confirm_Button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Confirm_Button;
+        
+        /// <summary>
+        /// MessageField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label MessageField;
     }
 }

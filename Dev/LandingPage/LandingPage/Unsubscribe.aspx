@@ -4,12 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Unsubscribe the newsletter</title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="UnsubscribeForm" runat="server">
     <div>
-        <asp:Label runat="server" ID="Email"/>
+        Are you sure you want to unsubscribe our newsletter? <br/>
+        <asp:Label runat="server" ID="Email"/> <br/>
+        <asp:Button runat="server" Text="Unsubscribe the newsletter" ID="Confirm_Button" OnClick="ConfirmUnsubscription"/> <br/>
+        <asp:Label runat="server" ID="MessageField"/>
     </div>
     </form>
 </body>
