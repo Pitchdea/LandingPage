@@ -77,7 +77,8 @@ namespace LandingPage
                 .Replace(";", "_")
                 .Replace("/*", "_")
                 .Replace("*/", "_")
-                .Replace("@@", "_");
+                .Replace("@@", "_")
+                .Replace("'", "''");
         }
     }
 
