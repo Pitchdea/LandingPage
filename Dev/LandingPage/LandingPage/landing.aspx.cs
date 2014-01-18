@@ -6,18 +6,31 @@ using System.Web.UI.WebControls;
 using System;
 using System.Text.RegularExpressions;
 using System.Web.UI;
+using log4net;
 
 namespace LandingPage
 {
     public partial class Landing : Page
     {
+        private readonly ILog _log = LogManager.GetLogger(typeof(Landing));
+
         private SqlTool _sqlTool;
         private EmailTool _emailTool;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            _sqlTool = new SqlTool();
-            _emailTool = new EmailTool();
+            log4net.Config.XmlConfigurator.Configure();
+            _log.Debug("test");
+
+            try
+            {
+                _sqlTool = new SqlTool();
+                _emailTool = new EmailTool();
+            }
+            catch (Exception exception)
+            {
+                _log.ErrorFormat("Exception loading tools: {0} \n {1}", exception.Message, exception.StackTrace);
+            }
         }
 
         protected void subsc_button_Click(object sender, EventArgs e)
@@ -108,10 +121,17 @@ namespace LandingPage
             var config = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("~/");
 
             _smtpHost = config.AppSettings.Settings["Smtp.Host"].Value;
-            _smtPort = int.Parse(config.AppSettings.Settings["Smtp.Port"].Value);
+            var smtPortString = config.AppSettings.Settings["Smtp.Port"].Value;
             _emailTemplatePath = config.AppSettings.Settings["Subscribe.EmailTemplatePath"].Value;
 
-            Console.WriteLine(_smtpHost + _smtPort);
+            if (string.IsNullOrEmpty(_smtpHost))
+                throw new Exception("couldn't read Smtp.Host from configuration file.");
+            if (string.IsNullOrEmpty(smtPortString))
+                throw new Exception("couldn't read Smtp.Host from configuration file.");
+            if (string.IsNullOrEmpty(_emailTemplatePath))
+                throw new Exception("couldn't read Subscribe.EmailTemplatePath from configuration file.");
+
+            _smtPort = int.Parse(smtPortString);
         }
 
         public void SendSubsciptionEmail(string hash, string email)
