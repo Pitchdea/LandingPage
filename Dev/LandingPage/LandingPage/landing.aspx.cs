@@ -1,4 +1,7 @@
 ﻿using System.Data;
+using System.IO;
+using System.Net;
+using System.Net.Mail;
 using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 using System;
@@ -9,42 +12,55 @@ namespace LandingPage
 {
     public partial class Landing : Page
     {
-        private SqlTool _tool;
+        private SqlTool _sqlTool;
+        private EmailTool _emailTool;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            _tool = new SqlTool();
+            _sqlTool = new SqlTool();
+            _emailTool = new EmailTool();
         }
 
         protected void subsc_button_Click(object sender, EventArgs e)
         {
-            if (!EmailValidator.Validate(subsc_email.Text))
-            {
-                Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
-                return; //TODO: STYLED Front-end message to user.
-            }
-            Response.Write("<script type='text/javascript'>alert('Thank you for subscribing to Pitchdea!.');</script>");
+            _emailTool.SendTestEmail();
+            //if (!EmailValidator.Validate(subsc_email.Text))
+            //{
+            //    Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
+            //    return; //TODO: STYLED Front-end message to user.
+            //}
+            //Response.Write("<script type='text/javascript'>alert('Thank you for subscribing to Pitchdea!.');</script>");
 
-            var added = _tool.SaveIfNotExists(subsc_email.Text.ToLower());
+            //var added = _sqlTool.SaveIfNotExists(subsc_email.Text.ToLower());
+
+            //if (added)
+            //{
+            //    //TODO: send automatic email
+            //}
         }
 
         protected void contact_form_button_click(object sender, EventArgs e)
         {
             if(!EmailValidator.Validate(contact_form_email.Text))
+            {
                 Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
-                return; 
+                return;
+            }
 
             if(string.IsNullOrEmpty(contact_form_name.Text))
+            {
                 Response.Write("<script type='text/javascript'>alert('You need to input something into the name field.');</script>");
-                return; 
+                return;
+            } 
 
             if(string.IsNullOrEmpty(contact_form_message.Text))
+            {
                 Response.Write("<script type='text/javascript'>alert('You need to input a message.');</script>");
-                return; 
-
+                return;
+            } 
  
-                Response.Write("<script type='text/javascript'>alert('Thank you or your message!');</script>");
-            var saved = _tool.SaveContactRequest(contact_form_name.Text, contact_form_email.Text, contact_form_message.Text);
+            Response.Write("<script type='text/javascript'>alert('Thank you or your message!');</script>");
+            var saved = _sqlTool.SaveContactRequest(contact_form_name.Text, contact_form_email.Text, contact_form_message.Text);
         }
     }
 
@@ -121,6 +137,49 @@ namespace LandingPage
             command.ExecuteNonQuery();
             _connection.Close();
             return true;
+        }
+    }
+
+    public class EmailTool
+    {
+        private readonly string _smtpHost;
+        private readonly int _smtPort;
+        private readonly string _emailTemplatePath;
+
+        public EmailTool()
+        {
+            //var config = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(null);
+            var config = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("~/");
+
+            _smtpHost = config.AppSettings.Settings["Smtp.Host"].Value;
+            _smtPort = int.Parse(config.AppSettings.Settings["Smtp.Port"].Value);
+            _emailTemplatePath = config.AppSettings.Settings["Subscribe.EmailTemplatePath"].Value;
+
+            Console.WriteLine(_smtpHost + _smtPort);
+        }
+
+        public void SendTestEmail()
+        {
+            var body = File.ReadAllText(_emailTemplatePath);
+
+            var mailMessage = new MailMessage
+                {
+                    From = new MailAddress("no-reply@pitchdea.com"),
+                    Subject = "Pitchdea thanks you for your subscription",
+                    IsBodyHtml = true,
+                    Body = body
+                };
+            mailMessage.To.Add(new MailAddress("tero.urponen@gmail.com"));
+
+            var smtpClient = new SmtpClient
+                {
+                    UseDefaultCredentials = true,
+                    Host = _smtpHost,
+                    Port = _smtPort,
+                    EnableSsl = false,
+                };
+
+            smtpClient.Send(mailMessage);
         }
     }
 }

@@ -71,6 +71,7 @@
     <Content Include="css\flat-ui.css" />
     <Content Include="css\magnific-popup.css" />
     <Content Include="css\main.css" />
+    <Content Include="email_template.html" />
     <Content Include="fonts\Flat-UI-Icons.dev.svg" />
     <Content Include="fonts\Flat-UI-Icons.svg" />
     <Content Include="fonts\lato\lato-black-webfont.svg" />
