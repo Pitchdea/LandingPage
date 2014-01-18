@@ -1,44 +1,97 @@
 ﻿using System.Data;
+using System.IO;
+using System.Net;
+using System.Net.Mail;
 using System.Web.UI.WebControls;
-using MySql.Data.MySqlClient;
 using System;
 using System.Text.RegularExpressions;
 using System.Web.UI;
+using log4net;
 
 namespace LandingPage
 {
     public partial class Landing : Page
     {
-        private SqlTool _tool;
+        private readonly ILog _log = LogManager.GetLogger(typeof(Landing));
+
+        private SqlTool _sqlTool;
+        private EmailTool _emailTool;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            _tool = new SqlTool();
+            log4net.Config.XmlConfigurator.Configure();
+            _log.Debug("test");
+
+            try
+            {
+                _sqlTool = new SqlTool();
+                _emailTool = new EmailTool();
+            }
+            catch (Exception exception)
+            {
+                _log.ErrorFormat("Exception loading tools: {0} \n {1}", exception.Message, exception.StackTrace);
+            }
         }
 
         protected void subsc_button_Click(object sender, EventArgs e)
         {
             if (!EmailValidator.Validate(subsc_email.Text))
             {
-                return; //TODO: Front-end message to user.
+                Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
+                return; //TODO: STYLED Front-end message to user.
             }
-            //TODO: redirect and inform user of the result
-            var added = _tool.SaveIfNotExists(subsc_email.Text.ToLower());
+            var added = _sqlTool.SaveIfNotExists(subsc_email.Text.ToLower());
+
+            if (added)
+            {
+                var hash = _sqlTool.FindHashByEmail(subsc_email.Text);
+                _emailTool.SendSubsciptionEmail(hash, subsc_email.Text);
+                Response.Write("<script type='text/javascript'>alert('Thank you for subscribing to Pitchdea!.');</script>");
+            }
+            else
+            {
+                Response.Write("<script type='text/javascript'>alert('There already exists an active subscruption for this email!.');</script>");
+            }
         }
 
         protected void contact_form_button_click(object sender, EventArgs e)
         {
             if(!EmailValidator.Validate(contact_form_email.Text))
-                return; //TODO: Front-end message to user.
+            {
+                Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
+                return;
+            }
 
             if(string.IsNullOrEmpty(contact_form_name.Text))
-                return; //TODO: Front-end message to user.
+            {
+                Response.Write("<script type='text/javascript'>alert('You need to input something into the name field.');</script>");
+                return;
+            } 
 
             if(string.IsNullOrEmpty(contact_form_message.Text))
-                return; //TODO: Front-end message to user.
+            {
+                Response.Write("<script type='text/javascript'>alert('You need to input a message.');</script>");
+                return;
+            } 
+ 
+            Response.Write("<script type='text/javascript'>alert('Thank you or your message!');</script>");
+            var saved = _sqlTool.SaveContactRequest(
+                contact_form_name.Text, 
+                contact_form_email.Text, 
+                SqlInjectionScreening(contact_form_message.Text)
+            );
+        }
 
-            //TODO: redirect and inform user of the result
-            var saved = _tool.SaveContactRequest(contact_form_name.Text, contact_form_email.Text, contact_form_message.Text);
+        private string SqlInjectionScreening(string text)
+        {
+            return text
+                .Replace("--", "_")
+                .Replace(";--", "_")
+                .Replace(";", "_")
+                .Replace("/*", "_")
+                .Replace("*/", "_")
+                .Replace("@@", "_")
+                .Replace("'", "''");
         }
     }
 
@@ -57,64 +110,52 @@ namespace LandingPage
         }
     }
 
-    public class SqlTool
+    public class EmailTool
     {
-        private readonly MySqlConnection _connection;
-        private const string ConnectionString = @"Server=localhost; Database=pitchdealanding;Uid=pitchdealanding;Pwd=fAcuc8up";
+        private readonly string _smtpHost;
+        private readonly int _smtPort;
+        private readonly string _emailTemplatePath;
 
-        public SqlTool()
+        public EmailTool()
         {
-            _connection = new MySqlConnection(ConnectionString);
+            var config = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("~/");
+
+            _smtpHost = config.AppSettings.Settings["Smtp.Host"].Value;
+            var smtPortString = config.AppSettings.Settings["Smtp.Port"].Value;
+            _emailTemplatePath = config.AppSettings.Settings["Subscribe.EmailTemplatePath"].Value;
+
+            if (string.IsNullOrEmpty(_smtpHost))
+                throw new Exception("couldn't read Smtp.Host from configuration file.");
+            if (string.IsNullOrEmpty(smtPortString))
+                throw new Exception("couldn't read Smtp.Host from configuration file.");
+            if (string.IsNullOrEmpty(_emailTemplatePath))
+                throw new Exception("couldn't read Subscribe.EmailTemplatePath from configuration file.");
+
+            _smtPort = int.Parse(smtPortString);
         }
 
-        /// <summary>
-        /// Saves the email to database if it doesn't exist there yet.
-        /// </summary>
-        /// <param name="email">Email address to be added.</param>
-        /// <returns>True if email was added, false if it already exists.</returns>
-        public bool SaveIfNotExists(string email)
+        public void SendSubsciptionEmail(string hash, string email)
         {
-            if (CheckExistence(email))
-                return false;
+            var body = File.ReadAllText(_emailTemplatePath);
+            body = body.Replace("#UnsubscribeHash#", hash);
 
-            _connection.Open();
-            var query = "INSERT INTO subsc_emails (address) VALUES ('"+email+"');";
-            var command = new MySqlCommand(query, _connection);
-            command.ExecuteNonQuery();
-            _connection.Close();
-            return true;
-        }
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress("no-reply@pitchdea.com"),
+                Subject = "Pitchdea thanks you for your subscription",
+                IsBodyHtml = true,
+                Body = body
+            };
+            mailMessage.To.Add(new MailAddress(email));
 
-        /// <summary>
-        /// Checks if the email is already in the database.
-        /// </summary>
-        /// <param name="email">Email to be checked</param>
-        /// <returns>True if email found in database, false otherwise.</returns>
-        private bool CheckExistence(string email)
-        {
-            _connection.Open();
-            var command = new MySqlCommand(string.Format(@"select address from subsc_emails where address = '{0}';", email), _connection);
-            var found = command.ExecuteScalar();
-            _connection.Close();
-            return found != null;
-        }
-
-        /// <summary>
-        /// Saves a contact request to the database.
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="email"></param>
-        /// <param name="msg"></param>
-        /// <returns></returns>
-        public bool SaveContactRequest(string name, string email, string msg)
-        {
-            //TODO: check for illegal characters, protection against SQL injection.
-            _connection.Open();
-            var query = string.Format("INSERT INTO contactform (name, email, message) VALUES ('{0}','{1}','{2}');", name, email, msg);
-            var command = new MySqlCommand(query, _connection);
-            command.ExecuteNonQuery();
-            _connection.Close();
-            return true;
+            var smtpClient = new SmtpClient
+            {
+                UseDefaultCredentials = true,
+                Host = _smtpHost,
+                Port = _smtPort,
+                EnableSsl = false,
+            };
+            smtpClient.Send(mailMessage);
         }
     }
 }

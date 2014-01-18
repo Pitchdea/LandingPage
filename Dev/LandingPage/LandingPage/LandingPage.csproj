@@ -38,6 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
@@ -71,6 +74,7 @@
     <Content Include="css\flat-ui.css" />
     <Content Include="css\magnific-popup.css" />
     <Content Include="css\main.css" />
+    <Content Include="email_template.html" />
     <Content Include="fonts\Flat-UI-Icons.dev.svg" />
     <Content Include="fonts\Flat-UI-Icons.svg" />
     <Content Include="fonts\lato\lato-black-webfont.svg" />
@@ -213,6 +217,7 @@
     <Content Include="js\jquery.tagsinput.js" />
     <Content Include="js\jquery.ui.touch-punch.min.js" />
     <Content Include="landing_page.html" />
+    <Content Include="Unsubscribe.aspx" />
     <Content Include="Web.config" />
     <Content Include="landing.aspx" />
   </ItemGroup>
@@ -224,6 +229,14 @@
     </Compile>
     <Compile Include="landing.aspx.designer.cs">
       <DependentUpon>landing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlTool.cs" />
+    <Compile Include="Unsubscribe.aspx.cs">
+      <DependentUpon>Unsubscribe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unsubscribe.aspx.designer.cs">
+      <DependentUpon>Unsubscribe.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -301,6 +314,7 @@
     <Content Include="less\modules\ui-datepicker.less" />
     <Content Include="less\modules\ui-slider.less" />
     <Content Include="less\modules\ui-spinner.less" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
