@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="landing.aspx.cs" Inherits="LandingPage.Landing" %>
+<%@ Page MaintainScrollPositionOnPostback="true" %>
 
 <!DOCTYPE html>
 <html lang="en">
