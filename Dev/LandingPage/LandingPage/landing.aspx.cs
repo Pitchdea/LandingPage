@@ -62,7 +62,22 @@ namespace LandingPage
             } 
  
             Response.Write("<script type='text/javascript'>alert('Thank you or your message!');</script>");
-            var saved = _sqlTool.SaveContactRequest(contact_form_name.Text, contact_form_email.Text, contact_form_message.Text);
+            var saved = _sqlTool.SaveContactRequest(
+                contact_form_name.Text, 
+                contact_form_email.Text, 
+                SqlInjectionScreening(contact_form_message.Text)
+            );
+        }
+
+        private string SqlInjectionScreening(string text)
+        {
+            return text
+                .Replace("--", "_")
+                .Replace(";--", "_")
+                .Replace(";", "_")
+                .Replace("/*", "_")
+                .Replace("*/", "_")
+                .Replace("@@", "_");
         }
     }
 
