@@ -6243,3 +6243,14 @@ input {
 #hero {
 	min-height:87vh;
 }
+.notif {
+
+    line-height:200%;
+    padding:0px;
+    font-size:110%;
+    color:#d74a3a;
+    font-weight:700;
+    /*background-color:#f1c40f;*/
+    border-radius:7px;
+    
+}

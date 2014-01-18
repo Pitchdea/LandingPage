@@ -58,6 +58,15 @@ namespace LandingPage {
         protected global::System.Web.UI.WebControls.Button contact_form_submit_button;
         
         /// <summary>
+        /// contmsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label contmsg;
+        
+        /// <summary>
         /// subsc_email control.
         /// </summary>
         /// <remarks>
@@ -74,5 +83,14 @@ namespace LandingPage {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button subsc_button;
+        
+        /// <summary>
+        /// subscmsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label subscmsg;
     }
 }
