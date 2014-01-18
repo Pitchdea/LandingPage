@@ -214,6 +214,7 @@
     <Content Include="js\jquery.tagsinput.js" />
     <Content Include="js\jquery.ui.touch-punch.min.js" />
     <Content Include="landing_page.html" />
+    <Content Include="Unsubscribe.aspx" />
     <Content Include="Web.config" />
     <Content Include="landing.aspx" />
   </ItemGroup>
@@ -225,6 +226,14 @@
     </Compile>
     <Compile Include="landing.aspx.designer.cs">
       <DependentUpon>landing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlTool.cs" />
+    <Compile Include="Unsubscribe.aspx.cs">
+      <DependentUpon>Unsubscribe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unsubscribe.aspx.designer.cs">
+      <DependentUpon>Unsubscribe.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
