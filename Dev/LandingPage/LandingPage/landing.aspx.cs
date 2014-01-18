@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Net.Mail;
+using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System;
 using System.Text.RegularExpressions;
@@ -148,14 +149,18 @@ namespace LandingPage
             };
             mailMessage.To.Add(new MailAddress(email));
 
-            var smtpClient = new SmtpClient
-            {
-                UseDefaultCredentials = true,
-                Host = _smtpHost,
-                Port = _smtPort,
-                EnableSsl = false,
-            };
-            smtpClient.Send(mailMessage);
+            Task.Factory.StartNew(() =>
+                {
+                    var smtpClient = new SmtpClient
+                        {
+                            UseDefaultCredentials = true,
+                            Host = _smtpHost,
+                            Port = _smtPort,
+                            EnableSsl = true,
+                            Credentials = new NetworkCredential("no-reply@pitchdea.com", "sunESwu4")
+                        };
+                    smtpClient.Send(mailMessage);
+                });
         }
     }
 }
