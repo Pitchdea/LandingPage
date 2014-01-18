@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="landing.aspx.cs" Inherits="LandingPage.Landing" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="landing.aspx.cs" Inherits="LandingPage.Landing" MaintainScrollPositionOnPostback="true"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -242,7 +242,7 @@
 
             <header>
                 <h1>Contact us</h1>
-                <p class="lead">Do you have a question? We might have the answers you are looking for!</p>
+                <p class="lead">Do you have a question? We might have the answers you need!</p>
             </header>
 
             <div class="row">
@@ -332,7 +332,9 @@
 
                         <asp:Button runat="server" OnClick="contact_form_button_click" Text="Send" CssClass="btn btn-inverse btn-hg btn-block" ID="contact_form_submit_button"/> <%--TODO: style doesn't work for asp:Button!--%> 
 
-                     <div id="contact-error"></div>
+                     <div id="contact-error">
+                        <asp:label ID="contmsg" CssClass="notif" runat="server"/>
+                     </div>
                     <!--////////// end CONTACT FORM ///////////-->
 
               </div><!-- /col-md-6-->
@@ -367,7 +369,9 @@
                         </div><!-- /input-group -->
                     <!--////////// end of Newsletter Form ///////////-->
 
-                     <div id="error-info"></div><!-- Error notification for newsletter signup form -->
+                     <div id="error-info">
+                        <asp:label ID="subscmsg" CssClass="notif" runat="server"/>
+                     </div><!-- Error notification for newsletter signup form -->
 
                 </div>
 

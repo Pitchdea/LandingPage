@@ -38,7 +38,7 @@ namespace LandingPage
         {
             if (!EmailValidator.Validate(subsc_email.Text))
             {
-                Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
+                subscmsg.Text="This is not a valid email.";
                 return; //TODO: STYLED Front-end message to user.
             }
             var added = _sqlTool.SaveIfNotExists(subsc_email.Text.ToLower());
@@ -47,11 +47,11 @@ namespace LandingPage
             {
                 var hash = _sqlTool.FindHashByEmail(subsc_email.Text);
                 _emailTool.SendSubsciptionEmail(hash, subsc_email.Text);
-                Response.Write("<script type='text/javascript'>alert('Thank you for subscribing to Pitchdea!.');</script>");
+                subscmsg.Text = "Thank you for subscribing!";
             }
             else
             {
-                Response.Write("<script type='text/javascript'>alert('There already exists an active subscruption for this email!.');</script>");
+                subscmsg.Text = "There already exists an active subscription with this email.";
             }
         }
 
@@ -59,23 +59,23 @@ namespace LandingPage
         {
             if(!EmailValidator.Validate(contact_form_email.Text))
             {
-                Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
+                contmsg.Text = "The email needs to be valid.";
                 return;
             }
 
             if(string.IsNullOrEmpty(contact_form_name.Text))
             {
-                Response.Write("<script type='text/javascript'>alert('You need to input something into the name field.');</script>");
+                contmsg.Text = "You need to input something into the name field."; ;
                 return;
             } 
 
             if(string.IsNullOrEmpty(contact_form_message.Text))
             {
-                Response.Write("<script type='text/javascript'>alert('You need to input a message.');</script>");
+                contmsg.Text = "You need to input a message.";
                 return;
-            } 
- 
-            Response.Write("<script type='text/javascript'>alert('Thank you or your message!');</script>");
+            }
+
+            contmsg.Text = "Thank you for your message!";
             var saved = _sqlTool.SaveContactRequest(
                 contact_form_name.Text, 
                 contact_form_email.Text, 
