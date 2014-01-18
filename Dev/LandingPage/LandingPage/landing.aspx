@@ -97,7 +97,7 @@
                     <p class="lead">We have an idea...</p>
                     <p style="font-size:130%;">...about ideas that can change the world.</p>
                     <p>Pitchdea is a Finnish startup that aims to bring the ideas of the world together in a way never seen before. We are about crowdsourcing, creative thinking, and most of all, about ideas that can change the world.</p>
-                    <p>We are eagerly pursuing our goal of creating a platform where people and ideas would collide and create something brilliant. To do this we need you, so subscribe and follow the progress of Pitchdea. You have the possibility to get a sneak peak on the upcoming website and be part of a passionate community.</p>
+                    <p>We are eagerly pursuing our goal of creating a platform where people and ideas collide and create something brilliant. To do this we need you, so subscribe and follow the progress of Pitchdea. You have the possibility of getting a sneak peek on the upcoming website and being part of a passionate community.</p>
                     <a href="#newsletter" class="btn btn-hg btn-primary">Subscribe for news about pitchdea</a>                    
                 </div>
                 <div class="col-sm-4 intro social">
@@ -242,7 +242,7 @@
 
             <header>
                 <h1>Contact us</h1>
-                <p class="lead">Do you have a question? Someone else might have had the exact same one. Let's find out!</p>
+                <p class="lead">Do you have a question? We might have the answers you are looking for!</p>
             </header>
 
             <div class="row">
