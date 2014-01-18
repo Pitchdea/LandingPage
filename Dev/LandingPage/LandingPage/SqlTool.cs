@@ -77,5 +77,14 @@ namespace LandingPage
             _connection.Close();
             return found == null ? null : found.ToString();
         }
+
+        public string FindHashByEmail(string email)
+        {
+            _connection.Open();
+            var command = new MySqlCommand(string.Format(@"select hash from subsc_emails where address = '{0}';", email), _connection);
+            var found = command.ExecuteScalar();
+            _connection.Close();
+            return found == null ? null : found.ToString();
+        }
     }
 }

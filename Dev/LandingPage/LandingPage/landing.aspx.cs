@@ -22,7 +22,6 @@ namespace LandingPage
 
         protected void subsc_button_Click(object sender, EventArgs e)
         {
-            //_emailTool.SendTestEmail();
             if (!EmailValidator.Validate(subsc_email.Text))
             {
                 Response.Write("<script type='text/javascript'>alert('This is not a valid email.');</script>");
@@ -32,8 +31,9 @@ namespace LandingPage
 
             if (added)
             {
+                var hash = _sqlTool.FindHashByEmail(subsc_email.Text);
+                _emailTool.SendSubsciptionEmail(hash, subsc_email.Text);
                 Response.Write("<script type='text/javascript'>alert('Thank you for subscribing to Pitchdea!.');</script>");
-                //TODO: send automatic email
             }
             else
             {
@@ -89,7 +89,6 @@ namespace LandingPage
 
         public EmailTool()
         {
-            //var config = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(null);
             var config = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("~/");
 
             _smtpHost = config.AppSettings.Settings["Smtp.Host"].Value;
@@ -99,27 +98,27 @@ namespace LandingPage
             Console.WriteLine(_smtpHost + _smtPort);
         }
 
-        public void SendTestEmail()
+        public void SendSubsciptionEmail(string hash, string email)
         {
             var body = File.ReadAllText(_emailTemplatePath);
+            body = body.Replace("#UnsubscribeHash#", hash);
 
             var mailMessage = new MailMessage
-                {
-                    From = new MailAddress("no-reply@pitchdea.com"),
-                    Subject = "Pitchdea thanks you for your subscription",
-                    IsBodyHtml = true,
-                    Body = body
-                };
-            mailMessage.To.Add(new MailAddress("tero.urponen@gmail.com"));
+            {
+                From = new MailAddress("no-reply@pitchdea.com"),
+                Subject = "Pitchdea thanks you for your subscription",
+                IsBodyHtml = true,
+                Body = body
+            };
+            mailMessage.To.Add(new MailAddress(email));
 
             var smtpClient = new SmtpClient
-                {
-                    UseDefaultCredentials = true,
-                    Host = _smtpHost,
-                    Port = _smtPort,
-                    EnableSsl = false,
-                };
-
+            {
+                UseDefaultCredentials = true,
+                Host = _smtpHost,
+                Port = _smtPort,
+                EnableSsl = false,
+            };
             smtpClient.Send(mailMessage);
         }
     }
