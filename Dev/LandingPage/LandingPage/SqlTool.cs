@@ -89,6 +89,9 @@ namespace LandingPage
         
         public bool RemoveSubscription(string email)
         {
+            if (string.IsNullOrEmpty(email)) //Do not execute delete statement if email isn't valid.
+                return false;
+
             _connection.Open();
             var command = new MySqlCommand(string.Format(@"delete from subsc_emails where address = '{0}';", email), _connection);
             var affected = command.ExecuteNonQuery();
