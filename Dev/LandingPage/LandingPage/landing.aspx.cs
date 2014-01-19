@@ -20,6 +20,9 @@ namespace LandingPage
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            contmsg.Text = "";
+            subscmsg.Text = "";
+
             log4net.Config.XmlConfigurator.Configure();
             _log.Debug("test");
 
