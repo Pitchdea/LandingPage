@@ -176,7 +176,7 @@
 					 </div>
 
 					<div class="col-md-6 pull-left gallery-popup">
-						<a href="http://www.placehold.it/640x480"><img src="images/forbusiness.png" alt="placeholder image" class="img-responsive"></a>
+						<img src="images/forbusiness.png" alt="placeholder image" class="img-responsive">
 					</div>  
 
 				</div><!-- /row -->
