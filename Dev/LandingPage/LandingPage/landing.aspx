@@ -292,7 +292,7 @@
 					 
 				  <div class="col-md-8 col-xs-6">
 					<address>
-					  <a href="https://plus.google.com/u/0/116811503183718377211">https://plus.google.com/u/0/116811503183718377211</a><br>
+					  <a href="https://plus.google.com/u/0/116811503183718377211">plus.google.com</a><br>
 					</address>
 				  </div>
 
@@ -306,7 +306,7 @@
 					 
 				  <div class="col-md-8 col-xs-6">
 					<address>
-					  <a href="https://www.facebook.com/pitchdea">www.facebook.com/pitchdea</a><br>
+					  <a href="https://www.facebook.com/pitchdea">facebook.com</a><br>
 					</address>
 				  </div>
 
@@ -320,7 +320,7 @@
 					 
 				  <div class="col-md-8 col-xs-6">
 					<address>
-					  <a href="https://twitter.com/pitchdea">www.twitter.com/pitchdea</a><br>
+					  <a href="https://twitter.com/pitchdea">twitter.com</a><br>
 					</address>
 				  </div>
 
@@ -334,7 +334,7 @@
 					 
 				  <div class="col-md-8 col-xs-6">
 					<address>
-					  <a href="http://www.linkedin.com/company/pitchdea">www.linkedin.com/company/pitchdea</a><br>
+					  <a href="http://www.linkedin.com/company/pitchdea">linkedin.com</a><br>
 					</address>
 				  </div>
 
