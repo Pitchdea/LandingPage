@@ -15,7 +15,6 @@ namespace LandingPage
 
         public SqlTool()
         {
-            log4net.Config.XmlConfigurator.Configure();
             _connection = new MySqlConnection(ConnectionString);
         }
 

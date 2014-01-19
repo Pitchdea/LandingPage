@@ -24,7 +24,6 @@ namespace LandingPage
             subscmsg.Text = "";
 
             log4net.Config.XmlConfigurator.Configure();
-            _log.Debug("test");
 
             try
             {
@@ -134,6 +133,8 @@ namespace LandingPage
 
     public class EmailTool
     {
+        private readonly ILog _log = LogManager.GetLogger(typeof(SqlTool));
+
         private readonly string _smtpHost;
         private readonly int _smtPort;
         private readonly string _emailTemplatePath;
@@ -158,30 +159,37 @@ namespace LandingPage
 
         public void SendSubsciptionEmail(string hash, string email)
         {
-            var body = File.ReadAllText(_emailTemplatePath);
-            body = body.Replace("#UnsubscribeHash#", hash);
-
-            var mailMessage = new MailMessage
+            try
             {
-                From = new MailAddress("no-reply@pitchdea.com"),
-                Subject = "Pitchdea thanks you for your subscription",
-                IsBodyHtml = true,
-                Body = body
-            };
-            mailMessage.To.Add(new MailAddress(email));
+                var body = File.ReadAllText(_emailTemplatePath);
+                body = body.Replace("#UnsubscribeHash#", hash);
 
-            Task.Factory.StartNew(() =>
-                {
-                    var smtpClient = new SmtpClient
-                        {
-                            UseDefaultCredentials = true,
-                            Host = _smtpHost,
-                            Port = _smtPort,
-                            EnableSsl = true,
-                            Credentials = new NetworkCredential("no-reply@pitchdea.com", "sunESwu4")
-                        };
-                    smtpClient.Send(mailMessage);
-                });
+                var mailMessage = new MailMessage
+                    {
+                        From = new MailAddress("no-reply@pitchdea.com"),
+                        Subject = "Pitchdea thanks you for your subscription",
+                        IsBodyHtml = true,
+                        Body = body
+                    };
+                mailMessage.To.Add(new MailAddress(email));
+
+                Task.Factory.StartNew(() =>
+                    {
+                        var smtpClient = new SmtpClient
+                            {
+                                UseDefaultCredentials = true,
+                                Host = _smtpHost,
+                                Port = _smtPort,
+                                EnableSsl = true,
+                                Credentials = new NetworkCredential("no-reply@pitchdea.com", "sunESwu4")
+                            };
+                        smtpClient.Send(mailMessage);
+                    });
+            }
+            catch (Exception e)
+            {
+                _log.ErrorFormat("Exception in SendSubsciptionEmail: \n Hash={0} \n Email={1} \n Message: {2} \n {3}", hash, email, e.Message, e.StackTrace);
+            }
         }
     }
 }
