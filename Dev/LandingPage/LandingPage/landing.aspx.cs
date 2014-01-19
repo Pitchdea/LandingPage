@@ -11,9 +11,9 @@ using log4net;
 
 namespace LandingPage
 {
-    public partial class Landing : Page
+    public partial class LandingPage : Page
     {
-        private readonly ILog _log = LogManager.GetLogger(typeof(Landing));
+        private readonly ILog _log = LogManager.GetLogger(typeof(LandingPage));
 
         private SqlTool _sqlTool;
         private EmailTool _emailTool;
@@ -49,6 +49,12 @@ namespace LandingPage
             if (added)
             {
                 var hash = _sqlTool.FindHashByEmail(subsc_email.Text);
+
+                if (hash == null)
+                {
+                    _log.ErrorFormat("Didn't find hash for email: {0}", subsc_email.Text);
+                }
+
                 _emailTool.SendSubsciptionEmail(hash, subsc_email.Text);
                 subscmsg.Text = "Thank you for subscribing!";
                 subsc_email.Text = string.Empty;

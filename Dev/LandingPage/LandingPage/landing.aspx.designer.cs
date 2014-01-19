@@ -10,7 +10,7 @@
 namespace LandingPage {
     
     
-    public partial class Landing {
+    public partial class LandingPage {
         
         /// <summary>
         /// main_form control.

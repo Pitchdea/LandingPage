@@ -17,8 +17,13 @@ namespace LandingPage
             var hash = Request.QueryString["ID"];
             _sqlTool = new SqlTool();
             _email = _sqlTool.FindEmailByHash(hash);
-            
-            if (_email == null) //email was not found in our database
+
+            if (_email == null)
+            {
+                Confirm_Button.Enabled = false;
+                MessageField.Text = "Oops! Something went wrong";
+            }
+            else if (_email == "<not-found>") //email was not found in our database
             {
                 Confirm_Button.Enabled = false;
                 MessageField.Text = "You have already canceled your subscription.";
