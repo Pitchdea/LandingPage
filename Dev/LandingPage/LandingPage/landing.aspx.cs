@@ -51,6 +51,7 @@ namespace LandingPage
                 var hash = _sqlTool.FindHashByEmail(subsc_email.Text);
                 _emailTool.SendSubsciptionEmail(hash, subsc_email.Text);
                 subscmsg.Text = "Thank you for subscribing!";
+                subsc_email.Text = string.Empty;
             }
             else
             {
@@ -60,30 +61,41 @@ namespace LandingPage
 
         protected void contact_form_button_click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(contact_form_name.Text))
+            {
+                contmsg.Text = "You need to input something into the name field."; ;
+                return;
+            } 
+
             if(!EmailValidator.Validate(contact_form_email.Text))
             {
                 contmsg.Text = "The email needs to be valid.";
                 return;
             }
 
-            if(string.IsNullOrEmpty(contact_form_name.Text))
-            {
-                contmsg.Text = "You need to input something into the name field."; ;
-                return;
-            } 
-
             if(string.IsNullOrEmpty(contact_form_message.Text))
             {
                 contmsg.Text = "You need to input a message.";
                 return;
             }
-
-            contmsg.Text = "Thank you for your message!";
+            
             var saved = _sqlTool.SaveContactRequest(
                 contact_form_name.Text, 
                 contact_form_email.Text, 
                 SqlInjectionScreening(contact_form_message.Text)
             );
+
+            if (saved)
+            {
+                contmsg.Text = "Thank you for your message!";
+                contact_form_email.Text = string.Empty;
+                contact_form_name.Text = string.Empty;
+                contact_form_message.Text = string.Empty;
+            }
+            else
+            {
+                contmsg.Text = "Oops! Something went wrong.";
+            }
         }
 
         private string SqlInjectionScreening(string text)
