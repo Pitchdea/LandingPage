@@ -8,9 +8,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- One CSS file that rules them all -->
-		<link href="css/main.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet"/>
 
-		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico"/>
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 		<!--[if lt IE 9]>
