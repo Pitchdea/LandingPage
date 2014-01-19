@@ -14,6 +14,8 @@ namespace LandingPage
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            log4net.Config.XmlConfigurator.Configure();
+
             var hash = Request.QueryString["ID"];
             _sqlTool = new SqlTool();
             _email = _sqlTool.FindEmailByHash(hash);
