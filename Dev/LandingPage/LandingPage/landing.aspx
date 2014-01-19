@@ -176,7 +176,7 @@
 					 </div>
 
 					<div class="col-md-6 pull-left gallery-popup">
-						<a href="http://www.placehold.it/640x480"><img src="images/forbusiness.png" alt="placeholder image" class="img-responsive"></a>
+						<img src="images/forbusiness.png" alt="placeholder image" class="img-responsive">
 					</div>  
 
 				</div><!-- /row -->
@@ -346,7 +346,7 @@
 			  <div style="background:white; padding-top:3px;" class="col-md-6">
 
 					<div class="row contact-intro">
-						<div class="col-md-3 text-right"><img src="images/icons/support.svg" alt="" /></div>
+						<div class="col-md-3 text-right"><img src="images/icons/pirkko.png" alt="" /></div>
 						<div class="col-md-9"><p class="lead">Didn't find what you were looking for? Shoot us a line!</p></div>                        
 					</div>
 
