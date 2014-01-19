@@ -11,11 +11,14 @@ namespace LandingPage
         private readonly ILog _log = LogManager.GetLogger(typeof(SqlTool));
 
         private readonly MySqlConnection _connection;
-        private const string ConnectionString = @"Server=localhost; Database=pitchdealanding;Uid=pitchdealanding;Pwd=fAcuc8up";
 
         public SqlTool()
         {
-            _connection = new MySqlConnection(ConnectionString);
+            var config = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("~/");
+            var connString = config.AppSettings.Settings["MySQL.ConnectionString"].Value;
+
+            _connection = new MySqlConnection(connString);
+            _log.Debug("SQL tool loaded.");
         }
 
         /// <summary>
