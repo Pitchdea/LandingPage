@@ -16,6 +16,20 @@
 		<!--[if lt IE 9]>
 		  <script src="js/html5shiv.js"></script>
 		<![endif]-->
+        
+        <link href="https://plus.google.com/116811503183718377211" rel="publisher" />
+
+        <script type="text/javascript">
+            (function() {
+                var po = document.createElement("script");
+                po.type = "text/javascript";
+                po.async = true;
+                po.src = "https://apis.google.com/js/plusone.js?publisherid=116811503183718377211";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+
 	</head>
   
 	
@@ -271,20 +285,6 @@
 				</div><!-- /row -->
 
 				<div class="row">
-						  
-				  <div class="col-md-4 col-xs-6 text-left">
-					<strong>Skype</strong>
-				  </div>
-						  
-				  <div class="col-md-8 col-xs-6">
-					<address>
-					  pitchdea<br>
-					</address>
-				  </div>
-
-				</div><!-- /row -->
-
-				<div class="row">
 						
 				  <div class="col-md-4 col-xs-6 text-left">
 					<strong>Google+</strong>
@@ -292,13 +292,13 @@
 					 
 				  <div class="col-md-8 col-xs-6">
 					<address>
-					  pitchdea<br>
+					  <a href="https://plus.google.com/u/0/116811503183718377211">https://plus.google.com/u/0/116811503183718377211</a><br>
 					</address>
 				  </div>
 
 				</div><!-- /row -->
 				
-				  <div class="row">
+				<div class="row">
 						
 				  <div class="col-md-4 col-xs-6 text-left">
 					<strong>Facebook</strong>
@@ -306,7 +306,35 @@
 					 
 				  <div class="col-md-8 col-xs-6">
 					<address>
-					  pitchdea<br>
+					  <a href="https://www.facebook.com/pitchdea">www.facebook.com/pitchdea</a><br>
+					</address>
+				  </div>
+
+				</div><!-- /row -->
+                  
+                <div class="row">
+						
+				  <div class="col-md-4 col-xs-6 text-left">
+					<strong>Twitter</strong>
+				  </div>
+					 
+				  <div class="col-md-8 col-xs-6">
+					<address>
+					  <a href="https://twitter.com/pitchdea">www.twitter.com/pitchdea</a><br>
+					</address>
+				  </div>
+
+				</div><!-- /row -->
+                  
+                <div class="row">
+						
+				  <div class="col-md-4 col-xs-6 text-left">
+					<strong>LinkedIn</strong>
+				  </div>
+					 
+				  <div class="col-md-8 col-xs-6">
+					<address>
+					  <a href="http://www.linkedin.com/company/pitchdea">www.linkedin.com/company/pitchdea</a><br>
 					</address>
 				  </div>
 
