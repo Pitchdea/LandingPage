@@ -214,7 +214,7 @@
 				<!-- Feature Item 2 -->
 				<div class="col-md-3 text-center">
 					<div class="feature-icon">
-						<a href="http://www.linkedin.com/pub/kerkko-heiskanen/48/bb0/765" target="_blank"><img src="images/Kerkko.png" alt="kerkko" class="img-circle"></a>
+						<a href="http://www.linkedin.com/in/kerkkoheiskanen" target="_blank"><img src="images/Kerkko.png" alt="kerkko" class="img-circle"></a>
 					</div>
 					<h4>Kerkko Heiskanen</h4>
 					 <p>Front-End Developer</p>
@@ -224,7 +224,7 @@
 				<!-- Feature Item 3 -->
 				<div class="col-md-3 text-center">
 					<div class="feature-icon">
-						<a href="http://www.linkedin.com/pub/tero-urponen/54/481/ab7" target="_blank"><img src="images/tero.png" alt="tero" class="img-circle"></a>
+						<a href="http://www.linkedin.com/in/terourponen" target="_blank"><img src="images/tero.png" alt="tero" class="img-circle"></a>
 					</div>
 					<h4>Tero Urponen</h4>
 					 <p>Lead Back-End Developer</p>
