@@ -16,19 +16,19 @@
 		<!--[if lt IE 9]>
 		  <script src="js/html5shiv.js"></script>
 		<![endif]-->
-        
-        <link href="https://plus.google.com/116811503183718377211" rel="publisher" />
+		
+		<link href="https://plus.google.com/116811503183718377211" rel="publisher" />
 
-        <script type="text/javascript">
-            (function() {
-                var po = document.createElement("script");
-                po.type = "text/javascript";
-                po.async = true;
-                po.src = "https://apis.google.com/js/plusone.js?publisherid=116811503183718377211";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(po, s);
-            })();
-        </script>
+		<script type="text/javascript">
+			(function() {
+				var po = document.createElement("script");
+				po.type = "text/javascript";
+				po.async = true;
+				po.src = "https://apis.google.com/js/plusone.js?publisherid=116811503183718377211";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(po, s);
+			})();
+		</script>
 
 	</head>
   
@@ -116,10 +116,10 @@
 				</div>
 				<div class="col-sm-4 intro social">
 				  <p class="lead">Find us!</p>
-				  <a class="fui-facebook large inline" href="#"></a>
-				  <a class="fui-twitter large inline" href="#"></a>
-				  <a class="fui-googleplus large inline" href="#"></a>
-				  <a class="fui-linkedin large inline" href="#"></a>                  
+				  <a class="fui-facebook large inline" href="https://www.facebook.com/pitchdea"></a>
+				  <a class="fui-twitter large inline" href="https://twitter.com/pitchdea"></a>
+				  <a class="fui-googleplus large inline" href=" https://plus.google.com/u/0/b/116811503183718377211/116811503183718377211"></a>
+				  <a class="fui-linkedin large inline" href="http://www.linkedin.com/company/pitchdea"></a>                  
 				</div>
 
 			</div><!-- /row -->
@@ -311,8 +311,8 @@
 				  </div>
 
 				</div><!-- /row -->
-                  
-                <div class="row">
+				  
+				<div class="row">
 						
 				  <div class="col-md-4 col-xs-6 text-left">
 					<strong>Twitter</strong>
@@ -325,8 +325,8 @@
 				  </div>
 
 				</div><!-- /row -->
-                  
-                <div class="row">
+				  
+				<div class="row">
 						
 				  <div class="col-md-4 col-xs-6 text-left">
 					<strong>LinkedIn</strong>
@@ -358,7 +358,7 @@
 
 						<asp:TextBox ID="contact_form_message" CssClass="form-control input-hg" TextMode="MultiLine" rows="4" placeholder="Your message..." runat="server"/>
 
-						<asp:Button runat="server" OnClick="contact_form_button_click" Text="Send" CssClass="btn btn-inverse btn-hg btn-block" ID="contact_form_submit_button"/> <%--TODO: style doesn't work for asp:Button!--%> 
+						<asp:Button runat="server" OnClick="contact_form_button_click" Text="Send" CssClass="btn btn-inverse btn-hg btn-block" ID="contact_form_submit_button" />
 
 					 <div id="contact-error">
 						<asp:label ID="contmsg" CssClass="notif" runat="server"/>
@@ -424,16 +424,16 @@
 					<div class="col-md-6 social">
 						<ul class="bottom-icons">
 							<li>
-							  <a href="#" class="fui-facebook"></a>
+							  <a href="https://www.facebook.com/pitchdea" class="fui-facebook"></a>
 							</li>
 							 <li>
-							  <a href="#" class="fui-twitter"></a>
+							  <a href="https://twitter.com/pitchdea" class="fui-twitter"></a>
 							</li>                             
 							 <li>
-							  <a href="#" class="fui-googleplus"></a>
+							  <a href="https://plus.google.com/u/0/b/116811503183718377211/116811503183718377211" class="fui-googleplus"></a>
 							</li>
 							 <li>
-							  <a href="#" class="fui-linkedin"></a>
+							  <a href="http://www.linkedin.com/company/pitchdea" class="fui-linkedin"></a>
 							</li>
 							 
 						  </ul>                      
