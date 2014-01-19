@@ -48,16 +48,19 @@
 		</nav>
 
 	</section>
-
+    <section id="hero">
     <form id="UnsubscribeForm" runat="server">
     <div>
         <article style="padding:5%;">
             <h3>Are you sure you want to unsubscribe our newsletter?</h3> <br/>
-            <asp:Label runat="server" ID="Email"/> <br/>
+
+            <h5><asp:Label runat="server" ID="Email"/></h5> <br/>
+            
             <asp:Button runat="server" Text="Unsubscribe the newsletter" ID="Confirm_Button" OnClick="ConfirmUnsubscription"/> <br/>
             <asp:Label runat="server" ID="MessageField"/>
         </article>
     </div>
     </form>
+    </section>
 </body>
 </html>
