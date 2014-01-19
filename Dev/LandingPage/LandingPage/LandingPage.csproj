@@ -317,6 +317,7 @@
     <Content Include="less\modules\ui-slider.less" />
     <Content Include="less\modules\ui-spinner.less" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\PitchLandPublish.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
