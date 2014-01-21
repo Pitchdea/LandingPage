@@ -54,7 +54,8 @@ namespace LandingPage
                     _log.ErrorFormat("Didn't find hash for email: {0}", subsc_email.Text);
                 }
 
-                _emailTool.SendSubsciptionEmail(hash, subsc_email.Text);
+                //TODO: disabled temporarily for email service provider issues
+                //_emailTool.SendSubsciptionEmail(hash, subsc_email.Text); 
                 subscmsg.Text = "Thank you for subscribing!";
                 subsc_email.Text = string.Empty;
             }
@@ -175,15 +176,23 @@ namespace LandingPage
 
                 Task.Factory.StartNew(() =>
                     {
-                        var smtpClient = new SmtpClient
-                            {
-                                UseDefaultCredentials = true,
-                                Host = _smtpHost,
-                                Port = _smtPort,
-                                EnableSsl = true,
-                                Credentials = new NetworkCredential("no-reply@pitchdea.com", "sunESwu4")
-                            };
-                        smtpClient.Send(mailMessage);
+                        try
+                        {
+                            var smtpClient = new SmtpClient
+                                {
+                                    UseDefaultCredentials = true,
+                                    Host = _smtpHost,
+                                    Port = _smtPort,
+                                    EnableSsl = true,
+                                    Credentials = new NetworkCredential("no-reply@pitchdea.com", "sunESwu4")
+                                };
+                            smtpClient.Send(mailMessage);
+                            _log.DebugFormat("Email sent to {0}", email);
+                        }
+                        catch (Exception e)
+                        {
+                            _log.ErrorFormat("Exception in TASK SendSubsciptionEmail: \n Hash={0} \n Email={1} \n Message: {2} \n {3}", hash, email, e.Message, e.StackTrace);
+                        }
                     });
             }
             catch (Exception e)

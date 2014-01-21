@@ -18,7 +18,6 @@ namespace LandingPage
             var connString = config.AppSettings.Settings["MySQL.ConnectionString"].Value;
 
             _connection = new MySqlConnection(connString);
-            _log.Debug("SQL tool loaded.");
         }
 
         /// <summary>

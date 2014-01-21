@@ -159,6 +159,7 @@
     <Content Include="images\icons\picture.svg" />
     <Content Include="images\icons\pig.svg" />
     <Content Include="images\icons\pills.svg" />
+    <Content Include="images\icons\pirkko.png" />
     <Content Include="images\icons\play.svg" />
     <Content Include="images\icons\printer.svg" />
     <Content Include="images\icons\responsive.svg" />
