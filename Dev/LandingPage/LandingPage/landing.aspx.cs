@@ -55,7 +55,7 @@ namespace LandingPage
                 }
 
                 //TODO: disabled temporarily for email service provider issues
-                //_emailTool.SendSubsciptionEmail(hash, subsc_email.Text); 
+                _emailTool.SendSubsciptionEmail(hash, subsc_email.Text); 
                 subscmsg.Text = "Thank you for subscribing!";
                 subsc_email.Text = string.Empty;
             }
@@ -187,7 +187,7 @@ namespace LandingPage
                                     Credentials = new NetworkCredential("no-reply@pitchdea.com", "sunESwu4")
                                 };
                             smtpClient.Send(mailMessage);
-                            _log.DebugFormat("Email sent to {0}", email);
+                            _log.DebugFormat("Email succesfully sent to {0}", email);
                         }
                         catch (Exception e)
                         {
