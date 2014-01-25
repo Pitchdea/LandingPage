@@ -140,7 +140,7 @@
 				<div class="row">
 
 					<div class="col-md-6 pull-right gallery-popup">
-						<img src="images/forpeople_image.png" alt="placeholder image" class="img-responsive">
+						<img src="images/forpeople_image.jpg" alt="placeholder image" class="img-responsive">
 					</div> 
 
 					<div class="col-md-6 pull-left">
@@ -176,7 +176,7 @@
 					 </div>
 
 					<div class="col-md-6 pull-left gallery-popup">
-						<img src="images/forbusiness.png" alt="placeholder image" class="img-responsive">
+						<img src="images/forbusiness.jpg" alt="placeholder image" class="img-responsive">
 					</div>  
 
 				</div><!-- /row -->
@@ -466,7 +466,6 @@
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.isotope.min.js"></script>
-	<script src="js/jquery.magnific-popup.js"></script>
 	<script src="js/jquery.fitvids.min.js"></script>
 	<script src="assets/twitter/jquery.tweet.js"></script>
 	<script src="js/bootstrap-select.js"></script>

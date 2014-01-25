@@ -6127,6 +6127,22 @@ input {
   #newsletter p.lead {
     text-align: center;
   }
+
+  #business {
+    text-align: center;
+  }
+  #business .pull-right,
+  #business .pull-left {
+    float: none !important;
+  }
+  #business img.img-responsive {
+    width: 100%;
+    padding-bottom: 36px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+
   #info {
     text-align: center;
   }
