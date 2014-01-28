@@ -72,6 +72,7 @@
     <Content Include="bootstrap\js\holder.js" />
     <Content Include="css\demo.css" />
     <Content Include="css\flat-ui.css" />
+    <Content Include="css\magnific-popup.css" />
     <Content Include="css\main.css" />
     <Content Include="email_template.html" />
     <Content Include="fonts\Flat-UI-Icons.dev.svg" />
@@ -84,9 +85,9 @@
     <Content Include="fonts\lato\lato-regular-webfont.svg" />
     <Content Include="images\barun.png" />
     <Content Include="images\favicon.ico" />
-    <Content Include="images\forbusiness.png" />
+    <Content Include="images\forbusiness.jpg" />
     <Content Include="images\forpeople.png" />
-    <Content Include="images\forpeople_image.png" />
+    <Content Include="images\forpeople_image.jpg" />
     <Content Include="images\forpeople_list.png" />
     <Content Include="images\icons\android.svg" />
     <Content Include="images\icons\android1.svg" />
