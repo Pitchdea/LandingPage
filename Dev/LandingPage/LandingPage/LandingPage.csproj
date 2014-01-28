@@ -72,7 +72,6 @@
     <Content Include="bootstrap\js\holder.js" />
     <Content Include="css\demo.css" />
     <Content Include="css\flat-ui.css" />
-    <Content Include="css\magnific-popup.css" />
     <Content Include="css\main.css" />
     <Content Include="email_template.html" />
     <Content Include="fonts\Flat-UI-Icons.dev.svg" />
