@@ -418,7 +418,7 @@
 
 				<div class="row">
 					<div class="col-md-6">
-						<p>Copyright &copy; 2013 PITCHDEA! Designed by <a href="#team" target="_blank">pitchdea-team</a>.</p>
+						<p>Copyright &copy; 2014 PITCHDEA! Designed by <a href="#team" target="_blank">pitchdea-team</a>.</p>
 					</div>
 
 					<div class="col-md-6 social">
