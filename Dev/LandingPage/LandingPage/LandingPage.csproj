@@ -63,6 +63,7 @@
   <ItemGroup>
     <Content Include="assets\twitter\jquery.tweet.js" />
     <Content Include="assets\twitter\jquery.tweet.min.js" />
+    <Content Include="blog\BlogEN.html" />
     <Content Include="bootstrap\css\bootstrap-docs.css" />
     <Content Include="bootstrap\css\bootstrap.css" />
     <Content Include="bootstrap\css\prettify.css" />
@@ -70,10 +71,12 @@
     <Content Include="bootstrap\js\application.js" />
     <Content Include="bootstrap\js\google-code-prettify\prettify.js" />
     <Content Include="bootstrap\js\holder.js" />
+    <Content Include="css\blog.css" />
+    <Content Include="css\blogmain.css" />
     <Content Include="css\demo.css" />
     <Content Include="css\flat-ui.css" />
-    <Content Include="css\magnific-popup.css" />
     <Content Include="css\main.css" />
+    <Content Include="css\normalize.min.css" />
     <Content Include="email_template.html" />
     <Content Include="fonts\Flat-UI-Icons.dev.svg" />
     <Content Include="fonts\Flat-UI-Icons.svg" />

@@ -1,0 +1,21 @@
+﻿.blog-post {
+    float: left;
+    width: 69%;
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
