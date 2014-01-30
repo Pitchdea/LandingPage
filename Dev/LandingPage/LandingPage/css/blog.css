@@ -9,8 +9,14 @@
 }
 
 .blog-post section {
-    padding: 0px;
-    margin: 60px 0px;
+    padding: 0;
+    margin: 60px 0;
+}
+
+.blog-post .date {
+    margin-top: 0;
+    color: #ddd;
+    text-align: right;
 }
 
 .wrapper {
