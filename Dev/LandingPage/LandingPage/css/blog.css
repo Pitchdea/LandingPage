@@ -2,7 +2,8 @@
     float: left;
     width: 64%;
     background-color: rgb(236,240,241);
-    padding: 30px 80px;
+    padding-left:10%;
+    padding-right:10%;
     padding-top:80px;
     margin-top: 20px;
     margin-bottom: 80px;
@@ -37,9 +38,9 @@
 
 .main aside {
 	position:fixed;
-	right:2%;
+	right:7%;
 	top:5%;
-    width: 30%;
+    width: 24%;
     float: right;
     border-top:1px solid #ddd;
     box-shadow: 0 2px 3px #aaa;
