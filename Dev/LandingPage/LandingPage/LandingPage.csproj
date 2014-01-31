@@ -64,6 +64,7 @@
     <Content Include="assets\twitter\jquery.tweet.js" />
     <Content Include="assets\twitter\jquery.tweet.min.js" />
     <Content Include="blog\BlogEN.html" />
+    <Content Include="blog\BlogFI.html" />
     <Content Include="blog\images\CustomerGraphic.jpg" />
     <Content Include="blog\images\meetingphoto.jpg" />
     <Content Include="bootstrap\css\bootstrap-docs.css" />
