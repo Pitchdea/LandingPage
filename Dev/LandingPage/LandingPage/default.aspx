@@ -202,7 +202,7 @@
 			<div class="row">
 				
 				<!-- Feature Item 1 -->
-				<div class="col-md-2 text-center">
+				<div class="col-md-4 text-center">
 					<div class="feature-icon">
 						<a href="http://fi.linkedin.com/in/barunbashyal" target="_blank"><img src="images/barun.png" alt="barun" class="img-circle"></a>
 					</div>
@@ -212,7 +212,7 @@
 				</div>
 
 				<!-- Feature Item 2 -->
-				<div class="col-md-2 text-center">
+				<div class="col-md-4 text-center">
 					<div class="feature-icon">
 						<a href="http://www.linkedin.com/in/kerkkoheiskanen" target="_blank"><img src="images/Kerkko.png" alt="kerkko" class="img-circle"></a>
 					</div>
@@ -222,7 +222,7 @@
 				</div>
 
 				<!-- Feature Item 3 -->
-				<div class="col-md-2 text-center">
+				<div class="col-md-4 text-center">
 					<div class="feature-icon">
 						<a href="http://www.linkedin.com/in/terourponen" target="_blank"><img src="images/tero.png" alt="tero" class="img-circle"></a>
 					</div>
@@ -230,9 +230,10 @@
 					 <p>Lead Back-End Developer</p>
 					<p>Tero is the superman whose shoulders we are building this project on. With his knowledge in agile development and mentality of never giving up we can do anything. </p>
 				</div>
-
+            </div>
+            <div class="row" style="text-align: center">
 				<!-- Feature Item 4 -->
-				<div class="col-md-2 text-center">
+				<div class="col-md-4 text-center" style="float: none; display: inline-block">
 					<div class="feature-icon">
 						<a href="http://www.linkedin.com/in/tapiolouhi" target="_blank"><img src="images/Tapio.png" alt="tapio" class="img-circle"></a>
 					</div>
@@ -242,7 +243,7 @@
 				</div>
 
 				<!-- Feature Item 5 -->
-				<div class="col-md-2 text-center">
+				<div class="col-md-4 text-center" style="float: none; display: inline-block">
 					<div class="feature-icon">
 						<a href="http://fi.linkedin.com/pub/kristian-riehakainen/40/8bb/1a5" target="_blank"><img src="images/kristiananon.jpg" alt="tapio" class="img-circle"></a>
 					</div>
@@ -253,8 +254,7 @@
 
 			</div><!-- /row -->
 		</div><!-- /container -->
-
-	</section>
+    </section>
 
 	<!--/////////////////////////////////////// end FEATURES SECTION ////////////////////////////////////////-->
 
