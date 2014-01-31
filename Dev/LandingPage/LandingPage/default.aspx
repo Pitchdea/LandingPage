@@ -484,7 +484,6 @@
 	<script src="assets/twitter/jquery.tweet.js"></script>
 	<script src="js/flatui-checkbox.js"></script>
 	<script src="js/flatui-radio.js"></script>
-	<script src="js/jquery.tagsinput.js"></script>
 	<script src="js/jquery.placeholder.js"></script>
 	<script src="js/custom.js"></script>
 
