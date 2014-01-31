@@ -475,15 +475,13 @@
 	    ga('create', 'UA-47424060-1', 'pitchdea.com');
 	    ga('send', 'pageview');
 	</script>
-	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<script src="js/jquery.isotope.min.js"></script>
 	<script src="js/jquery.fitvids.min.js"></script>
 	<script src="assets/twitter/jquery.tweet.js"></script>
-	<script src="js/bootstrap-select.js"></script>
-	<script src="js/bootstrap-switch.js"></script>
 	<script src="js/flatui-checkbox.js"></script>
 	<script src="js/flatui-radio.js"></script>
 	<script src="js/jquery.tagsinput.js"></script>
