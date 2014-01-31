@@ -115,11 +115,14 @@
 					<a href="#newsletter" class="btn btn-hg btn-primary">Subscribe for news about pitchdea</a>                    
 				</div>
 				<div class="col-sm-4 intro social">
-				  <p class="lead">Find us!</p>
-				  <a class="fui-facebook large inline" href="https://www.facebook.com/pitchdea"></a>
-				  <a class="fui-twitter large inline" href="https://twitter.com/pitchdea"></a>
-				  <a class="fui-googleplus large inline" href=" https://plus.google.com/u/0/b/116811503183718377211/116811503183718377211"></a>
-				  <a class="fui-linkedin large inline" href="http://www.linkedin.com/company/pitchdea"></a>                  
+				    <p class="lead">Find us!</p>
+				        <a class="fui-facebook large inline" href="https://www.facebook.com/pitchdea"></a>
+				        <a class="fui-twitter large inline" href="https://twitter.com/pitchdea"></a>
+				        <a class="fui-googleplus large inline" href=" https://plus.google.com/u/0/b/116811503183718377211/116811503183718377211"></a>
+				        <a class="fui-linkedin large inline" href="http://www.linkedin.com/company/pitchdea"></a>
+                    <p style="margin: 20px; margin-top:50px;">
+                        <a class = "btn btn-hg btn-primary" href="blog/BlogEN.html"> Check our blog! </a>
+                    </p>
 				</div>
 
 			</div><!-- /row -->

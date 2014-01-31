@@ -65,6 +65,7 @@
     <Content Include="assets\twitter\jquery.tweet.min.js" />
     <Content Include="blog\BlogEN.html" />
     <Content Include="blog\BlogFI.html" />
+    <Content Include="blog\BlogRU.html" />
     <Content Include="blog\images\CustomerGraphic.jpg" />
     <Content Include="blog\images\meetingphoto.jpg" />
     <Content Include="bootstrap\css\bootstrap-docs.css" />
@@ -224,7 +225,6 @@
     <Content Include="js\jquery.placeholder.js" />
     <Content Include="js\jquery.tagsinput.js" />
     <Content Include="js\jquery.ui.touch-punch.min.js" />
-    <Content Include="landing_page.html" />
     <Content Include="Unsubscribe.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
