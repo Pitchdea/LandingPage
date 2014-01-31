@@ -30,6 +30,44 @@
     margin-bottom: 0; 
 }
 
+.blog-post .quote {
+    /*-webkit-box-shadow: 0 0 6px red;
+    box-shadow: 0 0 0 6px red;
+    border-left: 0.5em solid blue;*/
+    border: none;
+    font-style: italic;
+    width: 85%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+.blog-post .quote:before {
+    display: block;
+    height: 0;
+    content: "“";
+    margin-left: -.5em;
+    margin-top: -.5em;
+    font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+    float: left;
+}
+
+.blog-post .quote:after {
+    display: block;
+    height: 0;
+    content: "“";
+    margin-right: -.5em;
+    margin-top: -.4em;
+    font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+    float: right;
+}
+
+.blog-post .quote .signature {
+    margin-top: 20px;
+    text-align: right;
+}
+
 .wrapper {
     width: 1200px; /* 1140px - 10% for margins */
     margin: 0 auto;
