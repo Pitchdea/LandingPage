@@ -187,7 +187,7 @@ namespace LandingPage
                                     Credentials = new NetworkCredential("no-reply@pitchdea.com", "sunESwu4")
                                 };
                             smtpClient.Send(mailMessage);
-                            _log.DebugFormat("Email succesfully sent to {0}", email);
+                            _log.DebugFormat("Email successfully sent to {0}", email);
                         }
                         catch (Exception e)
                         {
