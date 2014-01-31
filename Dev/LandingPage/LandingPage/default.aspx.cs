@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System;
 using System.Text.RegularExpressions;
 using System.Web.UI;
-using log4net;
+using log4net;http://localhost:1546/default.aspx.cs
 
 namespace LandingPage
 {
@@ -41,7 +41,7 @@ namespace LandingPage
             if (!EmailValidator.Validate(subsc_email.Text))
             {
                 subscmsg.Text="This is not a valid email.";
-                return; //TODO: STYLED Front-end message to user.
+                return; 
             }
             var added = _sqlTool.SaveIfNotExists(subsc_email.Text.ToLower());
 
@@ -54,7 +54,7 @@ namespace LandingPage
                     _log.ErrorFormat("Didn't find hash for email: {0}", subsc_email.Text);
                 }
 
-                //TODO: disabled temporarily for email service provider issues
+                
                 _emailTool.SendSubsciptionEmail(hash, subsc_email.Text); 
                 subscmsg.Text = "Thank you for subscribing!";
                 subsc_email.Text = string.Empty;
@@ -119,8 +119,7 @@ namespace LandingPage
 
     public static class EmailValidator
     {
-        //TODO: SQL injection
-        //TODO: Other threats?
+        //TODO: Other threats than injections?
 
         public static bool Validate(string email)
         {
