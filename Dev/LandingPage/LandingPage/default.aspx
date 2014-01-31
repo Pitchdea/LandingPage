@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- One CSS file that rules them all -->
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet"/>
 
 		<link rel="shortcut icon" href="images/favicon.ico"/>
