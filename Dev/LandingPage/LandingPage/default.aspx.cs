@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System;
 using System.Text.RegularExpressions;
 using System.Web.UI;
-using log4net;http://localhost:1546/default.aspx.cs
+using log4net;
 
 namespace LandingPage
 {
