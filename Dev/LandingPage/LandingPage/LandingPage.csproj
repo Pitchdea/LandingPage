@@ -76,7 +76,6 @@
     <Content Include="bootstrap\js\google-code-prettify\prettify.js" />
     <Content Include="bootstrap\js\holder.js" />
     <Content Include="css\blog.css" />
-    <Content Include="css\blogmain.css" />
     <Content Include="css\demo.css" />
     <Content Include="css\flat-ui.css" />
     <Content Include="css\main.css" />

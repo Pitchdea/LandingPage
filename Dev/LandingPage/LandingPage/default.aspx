@@ -113,7 +113,7 @@
 					<p style="font-size:130%;">...about ideas that can change the world.</p>
 					<p>Pitchdea is a Finnish startup that aims to bring the ideas of the world together in a way never seen before. We are about crowdsourcing, creative thinking, and most of all, about ideas that can change the world.</p>
 					<p>We are eagerly pursuing our goal of creating a platform where people and ideas collide and create something brilliant. To do this we need you, so subscribe and follow the progress of Pitchdea. You have the possibility of getting a sneak peek on the upcoming website and being part of a passionate community.</p>
-					<a href="#newsletter" class="btn btn-hg btn-primary">Subscribe for news about pitchdea</a>                    
+					<a href="#newsletter" class="btn btn-hg btn-primary" style="margin-right:0!important;max-width:100%!important;font-size:110%;">Subscribe for news about pitchdea</a>                    
 				</div>
 				<div class="col-sm-4 intro social">
 				    <p class="lead">Find us!</p>

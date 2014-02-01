@@ -5667,8 +5667,8 @@ input {
   padding: 0;
 }
 #header .navbar-collapse {
-  /*max-height: 500px;*/
- height:auto;
+ max-height: 600px!important;
+ height:auto!important;
 }
 #header .navbar {
   margin-bottom: 0;
@@ -6203,6 +6203,10 @@ input {
 }
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
+    btn {
+        margin-right:0;
+    }
+
   #header .navbar {
     position: relative;
   }
