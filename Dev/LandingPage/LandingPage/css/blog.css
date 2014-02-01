@@ -81,6 +81,7 @@
     box-shadow: 0 2px 3px #aaa;
     margin-top: 100px;
     padding: 20px 10px;
+    max-height:80%;
 }
 
 @media (max-width: 1200px) {
