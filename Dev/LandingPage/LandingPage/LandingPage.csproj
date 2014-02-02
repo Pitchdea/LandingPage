@@ -83,6 +83,7 @@
     <Content Include="email_template.html" />
     <Content Include="fonts\Flat-UI-Icons.dev.svg" />
     <Content Include="fonts\Flat-UI-Icons.svg" />
+    <Content Include="images\kristianriehakainen.jpg" />
     <Content Include="fonts\lato\lato-black-webfont.svg" />
     <Content Include="fonts\lato\lato-bold-webfont.svg" />
     <Content Include="fonts\lato\lato-bolditalic-webfont.svg" />

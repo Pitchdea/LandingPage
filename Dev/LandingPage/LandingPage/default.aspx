@@ -249,7 +249,7 @@
 				<!-- Feature Item 5 -->
 				<div class="col-md-4 text-center" style="float: none; display: inline-block">
 					<div class="feature-icon">
-						<a href="http://fi.linkedin.com/pub/kristian-riehakainen/40/8bb/1a5" target="_blank"><img src="images/kristiananon.jpg" alt="tapio" class="img-circle"></a>
+						<a href="http://fi.linkedin.com/pub/kristian-riehakainen/40/8bb/1a5" target="_blank"><img src="images/kristianriehakainen.jpg" alt="tapio" class="img-circle"></a>
 					</div>
 					<h4>Kristian Riehakainen</h4>
 					<p>Marketing specialist</p>
