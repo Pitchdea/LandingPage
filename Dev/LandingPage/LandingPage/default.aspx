@@ -42,7 +42,7 @@
 	<!--///////////////////////////////////////// PARALLAX BACKGROUND ////////////////////////////////////////-->
 
 	<!-- image is set in the CSS as a background image -->
-	<div id="parallax"></div>
+	<!--<div id="parallax"></div>-->
 
 	<!--///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
 
@@ -113,7 +113,7 @@
 					<p style="font-size:130%;">...about ideas that can change the world.</p>
 					<p>Pitchdea is a Finnish startup that will bring the ideas of the world together in a way never seen before. We are about crowdsourcing, creative thinking, and most of all, about ideas that can change the world.</p>
 					<p>We are eagerly pursuing our goal of creating a platform where people and ideas collide and create something brilliant. To do this we need you, so subscribe and follow the progress of Pitchdea. You have the possibility of getting a sneak peek on the upcoming website and being part of a passionate community.</p>
-					<a href="#newsletter" class="btn btn-hg btn-primary">Subscribe for news about pitchdea</a>                    
+					<a href="#newsletter" class="btn btn-hg btn-primary" style="margin-right:0!important;max-width:100%!important;font-size:110%;">Subscribe for news about pitchdea</a>                    
 				</div>
 				<div class="col-sm-4 intro social">
 				    <p class="lead">Find us!</p>
@@ -122,7 +122,7 @@
 				        <a class="fui-googleplus large inline" href=" https://plus.google.com/u/0/b/116811503183718377211/116811503183718377211"></a>
 				        <a class="fui-linkedin large inline" href="http://www.linkedin.com/company/pitchdea"></a>
                     <p style="margin: 20px; margin-top:50px;">
-                        <a class = "btn btn-hg btn-primary" href="blog/BlogEN.html"> Check our blog! </a>
+                        <a class = "btn btn-hg btn-primary" href="blog/BlogEN.html"> Check out our blog! </a>
                     </p>
 				</div>
 
@@ -249,7 +249,7 @@
 				<!-- Feature Item 5 -->
 				<div class="col-md-4 text-center" style="float: none; display: inline-block">
 					<div class="feature-icon">
-						<a href="http://fi.linkedin.com/pub/kristian-riehakainen/40/8bb/1a5" target="_blank"><img src="images/kristiananon.jpg" alt="tapio" class="img-circle"></a>
+						<a href="http://fi.linkedin.com/pub/kristian-riehakainen/40/8bb/1a5" target="_blank"><img src="images/kristianriehakainen.jpg" alt="tapio" class="img-circle"></a>
 					</div>
 					<h4>Kristian Riehakainen</h4>
 					<p>Marketing specialist</p>
@@ -458,7 +458,8 @@
 		</div><!-- /container -->
 
 	</section>
-
+        
+    </form>
 	<!--//////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
 
 
@@ -488,6 +489,5 @@
 	<script src="js/custom.js"></script>
 
 	<!--//////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
-  </form>
   </body>
 </html>

@@ -71,6 +71,7 @@
 }
 
 .main aside {
+    background:#fff;
 	position:fixed;
 	right:7%;
 	top:5%;
@@ -80,4 +81,46 @@
     box-shadow: 0 2px 3px #aaa;
     margin-top: 100px;
     padding: 20px 10px;
+    max-height:80%;
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .main aside {
+        background:#fff;
+	    position:inherit;
+        width: 100%;
+        border-top:15px solid rgb(236,240,241);
+        box-shadow: none;
+        margin-top: 0px;
+        padding: 7px 3px;
+        padding-left:20px;
+        font-size:90%;
+    }
+
+    .main aside h4 {
+        margin-top:5px;
+        margin-bottom:2px;
+        padding-bottom:2px;
+        font-size:125%;
+    }
+
+    .blog-post {
+        padding-top:30px;
+        width:100%;
+        margin-top:0;
+        margin-bottom:0;
+    }
 }
