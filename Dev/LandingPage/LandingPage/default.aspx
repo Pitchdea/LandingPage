@@ -111,7 +111,7 @@
 					<h3><small style="color:gray;">- where ideas evolve!</small></h3>
 					<p class="lead">We have an idea...</p>
 					<p style="font-size:130%;">...about ideas that can change the world.</p>
-					<p>Pitchdea is a Finnish startup that aims to bring the ideas of the world together in a way never seen before. We are about crowdsourcing, creative thinking, and most of all, about ideas that can change the world.</p>
+					<p>Pitchdea is a Finnish startup that will bring the ideas of the world together in a way never seen before. We are about crowdsourcing, creative thinking, and most of all, about ideas that can change the world.</p>
 					<p>We are eagerly pursuing our goal of creating a platform where people and ideas collide and create something brilliant. To do this we need you, so subscribe and follow the progress of Pitchdea. You have the possibility of getting a sneak peek on the upcoming website and being part of a passionate community.</p>
 					<a href="#newsletter" class="btn btn-hg btn-primary">Subscribe for news about pitchdea</a>                    
 				</div>
@@ -154,9 +154,9 @@
 
 						<p> Have you ever had an idea that you wished could become reality?</p>
 
-						<p> Find the right people and evolve your idea through discussions. The end product can be anything imagineable: a comic, a tattooed leather jacket or a way for your local cafeteria to improve their service. Pitchdea aims to provide you with a way of finding out if people want the idea to come alive. But don't stop there - find similar ideas and connect with people with the means to make your idea reality. </p>
+						<p> Find the right people and evolve your idea through discussions. The end product can be anything imagineable: a comic, a tattooed leather jacket or a way for your local cafeteria to improve their service. Pitchdea will provide you with a way of finding out if people want the idea to come alive. But don't stop there - find similar ideas and connect with people with the means to make your idea reality. </p>
 						<p> Already read the news and blogs or seen enough cat pictures for the day?</p>
-						<p> We might just have the cure for you. Our team wants to bring you interesting ideas and make browsing through them fun. In a nutshell we offer an interest based social media platform for creating and evolving ideas. We allow the user to share and discover ideas they are passionate about and then improve them. Join us and find the most interesting ideas and maybe even some new friends! </p>
+						<p> We have the cure for you. Our team brings you interesting ideas and makes browsing through them fun. In a nutshell we offer an interest based social media platform for creating and evolving ideas. We allow the user to share and discover ideas they are passionate about and then improve them. Join us and find the most interesting ideas and maybe even some new friends! </p>
 					</div> 
 
 				</div><!-- /row -->
