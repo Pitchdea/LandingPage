@@ -20,6 +20,11 @@ namespace LandingPage
             _connection = new MySqlConnection(connString);
         }
 
+        public SqlTool(string connectionString)
+        {
+            _connection = new MySqlConnection(connectionString);
+        }
+
         /// <summary>
         /// Saves the email to database if it doesn't exist there yet.
         /// </summary>
