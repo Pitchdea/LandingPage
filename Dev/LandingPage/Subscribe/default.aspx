@@ -28,7 +28,7 @@
                 
                 <div class="row">
                     <div class="col-md-12">
-                        <asp:CheckBox runat="server" Text="Subscribe for Pitchdea newsletter." Checked="True" CssClass="check"/>
+                        <asp:CheckBox runat="server" Text="Subscribe for Pitchdea newsletter." ID="newsletter_check" Checked="True" CssClass="check"/>
                     </div>
                 </div>
 

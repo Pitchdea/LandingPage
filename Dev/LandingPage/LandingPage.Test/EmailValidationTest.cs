@@ -60,5 +60,13 @@ namespace LandingPage.Test
             var result2 = EmailValidator.Validate(email2);
             Assert.False(result2, "Shouldn't be valid.");
         }
+
+        [Test]
+        public void _07_ShouldBeValidEmail_ThreePartDomain()
+        {
+            var email = "testi.test.test@fosdo.fooasa.com";
+            var result = EmailValidator.Validate(email);
+            Assert.True(result, "Should be valid.");
+        }
     }
 }
