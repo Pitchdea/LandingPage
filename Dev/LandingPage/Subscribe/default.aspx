@@ -10,25 +10,37 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <section id="header">
-            Pitchdea
+        <section id="header" style="text-align: center;">
+            <div style="display: inline-block;">
+                <p class="brand">PITCHDEA</p>
+                <p class="tagline">- where ideas evolve!</p>
+            </div>
         </section>
         <section id ="newsletter">
             <div class="container">
-			    <div class="row">
-
-				    <div class="col-md-6">
-					    <p class="lead">Stay in the loop with our newsletter!</p>
+                <div class="row" style="text-align: center;">
+                    
+				    <div>
+					    <p class="lead">Sign up for closed <span style="color:#c0392b; font-weight: 400;">BETA</span>!</p>
 				    </div>
+
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <asp:CheckBox runat="server" Text="Subscribe for Pitchdea newsletter." Checked="True" CssClass="check"/>
+                    </div>
+                </div>
+
+			    <div class="row">
 				
-				    <div class="col-md-6">
+				    <div class="col-md-12">
 
 					    <!--////////// Newsletter Form //////////-->
 						    <div class="input-group">
-					     <%--     <input type="text" name="e-mail" id="e-mail" class="form-control input-hg">--%>
-						      <asp:textbox runat="server" ID="subsc_email" CssClass="form-control input-hg" />
+						      <asp:textbox runat="server" ID="subsc_email" CssClass="form-control input-hg subs" placeholder="Email address"/>
 						      <span class="input-group-btn">
-							    <asp:button runat="server" OnClick="subsc_button_Click" Text="Sign Up" ID="subsc_button" CssClass="btn btn-inverse btn-hg" />
+							    <asp:button runat="server" OnClick="subsc_button_Click" Text="Sign up for BETA access" ID="subsc_button" CssClass="btn btn-inverse btn-hg subs" />
 						      </span>
 						    </div><!-- /input-group -->
 					    <!--////////// end of Newsletter Form ///////////-->
