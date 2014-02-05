@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Subscribe._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Subscribe.Default" %>
 
 <!DOCTYPE html>
 
@@ -46,6 +46,9 @@
 				    </div>
 
 			    </div><!-- /row -->
+                <div class="row">
+                    <asp:Label runat="server" ID="subscmsg" CssClass="msg"/>
+                </div>
 		    </div><!-- /container -->
         </section>
     </form>

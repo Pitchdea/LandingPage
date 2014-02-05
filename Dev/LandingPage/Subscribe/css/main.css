@@ -177,3 +177,9 @@ input[type=checkbox] {
     margin: 20px;
     margin-left: 40px;
 }
+
+.msg {
+    color: #c0392b;
+    font-size: 40px;
+    margin-left: 100px; 
+}
