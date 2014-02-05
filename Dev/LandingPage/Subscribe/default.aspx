@@ -36,18 +36,12 @@
 				
 				    <div class="col-md-12">
 
-					    <!--////////// Newsletter Form //////////-->
 						    <div class="input-group">
 						      <asp:textbox runat="server" ID="subsc_email" CssClass="form-control input-hg subs" placeholder="Email address"/>
 						      <span class="input-group-btn">
 							    <asp:button runat="server" OnClick="subsc_button_Click" Text="Sign up for BETA access" ID="subsc_button" CssClass="btn btn-inverse btn-hg subs" />
 						      </span>
 						    </div><!-- /input-group -->
-					    <!--////////// end of Newsletter Form ///////////-->
-
-					    <div id="error-info">
-						    <asp:label ID="subscmsg" CssClass="notif" runat="server"/>
-					     </div><!-- Error notification for newsletter signup form -->
 
 				    </div>
 
