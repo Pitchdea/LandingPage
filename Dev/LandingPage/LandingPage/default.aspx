@@ -117,12 +117,12 @@
 				</div>
 				<div class="col-sm-4 intro social">
 				    <p class="lead">Find us!</p>
-				        <a class="fui-facebook large inline" href="https://www.facebook.com/pitchdea"></a>
-				        <a class="fui-twitter large inline" href="https://twitter.com/pitchdea"></a>
-				        <a class="fui-googleplus large inline" href=" https://plus.google.com/u/0/b/116811503183718377211/116811503183718377211"></a>
-				        <a class="fui-linkedin large inline" href="http://www.linkedin.com/company/pitchdea"></a>
+				        <a class="fui-facebook large inline" target="_blank" href="https://www.facebook.com/pitchdea"></a>
+				        <a class="fui-twitter large inline" target="_blank" href="https://twitter.com/pitchdea"></a>
+				        <a class="fui-googleplus large inline" target="_blank" href=" https://plus.google.com/u/0/b/116811503183718377211/116811503183718377211"></a>
+				        <a class="fui-linkedin large inline" target="_blank" href="http://www.linkedin.com/company/pitchdea"></a>
                     <p style="margin: 20px; margin-top:50px;">
-                        <a class = "btn btn-hg btn-primary" href="blog/BlogEN.html"> Check out our blog! </a>
+                        <a class = "btn btn-hg btn-primary" target="_blank" href="blog/BlogEN.html"> Check out our blog! </a>
                     </p>
 				</div>
 
@@ -438,16 +438,16 @@
 					<div class="col-md-6 social">
 						<ul class="bottom-icons">
 							<li>
-							  <a href="https://www.facebook.com/pitchdea" class="fui-facebook"></a>
+							  <a href="https://www.facebook.com/pitchdea" class="fui-facebook" target="_blank"></a>
 							</li>
 							 <li>
-							  <a href="https://twitter.com/pitchdea" class="fui-twitter"></a>
+							  <a href="https://twitter.com/pitchdea" class="fui-twitter" target="_blank"></a>
 							</li>                             
 							 <li>
-							  <a href="https://plus.google.com/u/0/b/116811503183718377211/116811503183718377211" class="fui-googleplus"></a>
+							  <a href="https://plus.google.com/u/0/b/116811503183718377211/116811503183718377211" class="fui-googleplus"  target="_blank"></a>
 							</li>
 							 <li>
-							  <a href="http://www.linkedin.com/company/pitchdea" class="fui-linkedin"></a>
+							  <a href="http://www.linkedin.com/company/pitchdea" class="fui-linkedin" target="_blank"></a>
 							</li>
 							 
 						  </ul>                      
