@@ -395,18 +395,19 @@
 		<div class="container">
 			<div class="row">
 
-				<div class="col-md-6">
-					<p class="lead">Stay in the loop with our newsletter!</p>
+				<div class="col-md-5">
+					<p class="lead">
+					    Sign up for closed <span style="color:#c0392b; font-weight: 400;">BETA</span> and subscribe to our newsletter!
+					</p>
 				</div>
 				
-				<div class="col-md-6">
+				<div class="col-md-7">
 
 					<!--////////// Newsletter Form //////////-->
 						<div class="input-group">
-					 <%--     <input type="text" name="e-mail" id="e-mail" class="form-control input-hg">--%>
 						  <asp:textbox runat="server" ID="subsc_email" CssClass="form-control input-hg" />
 						  <span class="input-group-btn">
-							<asp:button runat="server" OnClick="subsc_button_Click" Text="Sign Up" ID="subsc_button" CssClass="btn btn-inverse btn-hg" />
+							<asp:button runat="server" OnClick="subsc_button_Click" Text="Sign Up BETA" ID="subsc_button" CssClass="btn btn-inverse btn-hg" />
 						  </span>
 						</div><!-- /input-group -->
 					<!--////////// end of Newsletter Form ///////////-->
