@@ -112,7 +112,7 @@
 					<p class="lead">We have an idea...</p>
 					<p style="font-size:130%;">...about ideas that can change the world.</p>
 					<p>Pitchdea is a Finnish startup that will bring the ideas of the world together in a way never seen before. We are about crowdsourcing, creative thinking, and most of all, about ideas that can change the world.</p>
-					<p>We are eagerly pursuing our goal of creating a platform where people and ideas collide and create something brilliant. To do this we need you, so subscribe and follow the progress of Pitchdea. You have the possibility of getting a sneak peek on the upcoming website and being part of a passionate community.</p>
+					<p>Pitchdea is a platform where people and ideas collide and something brilliant will be created. To achieve this we need you, so subscribe and follow the progress of Pitchdea. You have the possibility of getting a sneak peek on the upcoming website and being part of a passionate community.</p>
 					<a href="#newsletter" class="btn btn-hg btn-primary" style="margin-right:0!important;max-width:100%!important;font-size:110%;">Subscribe for news and Beta access!</a>                    
 				</div>
 				<div class="col-sm-4 intro social">
@@ -211,11 +211,21 @@
 						<a href="http://fi.linkedin.com/in/barunbashyal" target="_blank"><img src="images/barun.png" alt="barun" class="img-circle"></a>
 					</div>
 					<h4>Barun Bashyal</h4>
-					<p>Project lead</p>
+					<p>Business Developer</p>
 					<p>Barun is the optimist and the leader in our team. His attitude in life will shine as a bright beacon for many and his cookings will keep us satisfied.  </p>
 				</div>
 
 				<!-- Feature Item 2 -->
+                <div class="col-md-4 text-center">
+					<div class="feature-icon">
+						<a href="http://www.linkedin.com/in/terourponen" target="_blank"><img src="images/tero.png" alt="tero" class="img-circle"></a>
+					</div>
+					<h4>Tero Urponen</h4>
+					 <p>Project Lead, Back-End Developer</p>
+					<p>Tero is the superman whose shoulders we are building this project on. With his knowledge in agile development and mentality of never giving up we can do anything. </p>
+				</div>
+				
+				<!-- Feature Item 3 -->
 				<div class="col-md-4 text-center">
 					<div class="feature-icon">
 						<a href="http://www.linkedin.com/in/kerkkoheiskanen" target="_blank"><img src="images/Kerkko.png" alt="kerkko" class="img-circle"></a>
@@ -225,15 +235,6 @@
 					<p>Kerkko is the crazy one. We live by his wild ideas and the passion in his eyes. Besides that Kerkko acts as the ultimate web guru our whole team relies on. </p>
 				</div>
 
-				<!-- Feature Item 3 -->
-				<div class="col-md-4 text-center">
-					<div class="feature-icon">
-						<a href="http://www.linkedin.com/in/terourponen" target="_blank"><img src="images/tero.png" alt="tero" class="img-circle"></a>
-					</div>
-					<h4>Tero Urponen</h4>
-					 <p>Lead Back-End Developer</p>
-					<p>Tero is the superman whose shoulders we are building this project on. With his knowledge in agile development and mentality of never giving up we can do anything. </p>
-				</div>
             </div>
             <div class="row" style="text-align: center">
 				<!-- Feature Item 4 -->
