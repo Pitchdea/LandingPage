@@ -75,6 +75,7 @@
     <Content Include="blog\images\PitchdeaAndJulja2.jpg" />
     <Content Include="blog\images\pregame.jpg" />
     <Content Include="blog\images\smiling_Barun.jpg" />
+    <Content Include="blog\images\taivas.jpg" />
     <Content Include="bootstrap\css\bootstrap-docs.css" />
     <Content Include="bootstrap\css\bootstrap.css" />
     <Content Include="bootstrap\css\prettify.css" />
