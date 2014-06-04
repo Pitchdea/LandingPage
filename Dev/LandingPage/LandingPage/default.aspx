@@ -225,7 +225,12 @@
 					<p>Tero is the superman whose shoulders we are building this project on. With his knowledge in agile development and mentality of never giving up we can do anything. </p>
 				</div>
 				
-				<!-- Feature Item 3 -->
+
+            </div>
+
+            <div class="row" style="text-align: center">
+                
+                <!-- Feature Item 3 -->
 				<div class="col-md-4 text-center">
 					<div class="feature-icon">
 						<a href="http://www.linkedin.com/in/kerkkoheiskanen" target="_blank"><img src="images/Kerkko.png" alt="kerkko" class="img-circle"></a>
@@ -234,21 +239,9 @@
 					 <p>Front-End Developer</p>
 					<p>Kerkko is the crazy one. We live by his wild ideas and the passion in his eyes. Besides that Kerkko acts as the ultimate web guru our whole team relies on. </p>
 				</div>
-
-            </div>
-            <div class="row" style="text-align: center">
+				
 				<!-- Feature Item 4 -->
-				<div class="col-md-4 text-center" style="float: none; display: inline-block">
-					<div class="feature-icon">
-						<a href="http://www.linkedin.com/in/tapiolouhi" target="_blank"><img src="images/Tapio.png" alt="tapio" class="img-circle"></a>
-					</div>
-					<h4>Tapio Louhi</h4>
-					<p>Back-End Developer</p>
-					<p>In Tapio’s hands the pieces of our puzzle have started to find their places. With his perspective and keen eye on information security we see the road ahead of us clearly.</p>
-				</div>
-
-				<!-- Feature Item 5 -->
-				<div class="col-md-4 text-center" style="float: none; display: inline-block">
+				<div class="col-md-4 text-center"> <!--style="float: none; display: inline-block"--> 
 					<div class="feature-icon">
 						<a href="http://fi.linkedin.com/pub/kristian-riehakainen/40/8bb/1a5" target="_blank"><img src="images/kristianriehakainen.jpg" alt="tapio" class="img-circle"></a>
 					</div>
